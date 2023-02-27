@@ -6,3 +6,25 @@
 .nav1 {
     background: linear-gradient(to top, #333333, #dd1818);
 }
+
+
+/* ######################Nav2###################### */
+.drawer_icon{
+    text-align: center;
+    border: 1px solid #ef5350;
+    padding: 5px 0px;
+    border-radius: 20px;
+    color:#ef5350;
+    width: 150px;
+    cursor: pointer;
+    /* transition: all 2s ease-in;
+    transform: translateX(); */
+    animation: backInLeft;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    /* don't forget to set a duration! */
+}
+.drawer_icon:hover{
+    color: black;
+    background-color: #ef5350;
+}

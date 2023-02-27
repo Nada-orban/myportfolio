@@ -26,26 +26,29 @@ import CloseIcon from '@mui/icons-material/Close';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import Nav from './Nav'
+import { Directions } from '@mui/icons-material';
+
+
 
 const drawerWidth = 240;
 
 //hide navbar
-function HideOnScroll(props) {
-    const { children, window } = props;
-    const trigger = useScrollTrigger({
-        target: window ? window() : undefined,
-    });
+// function HideOnScroll(props) {
+//     const { children, window } = props;
+//     const trigger = useScrollTrigger({
+//         target: window ? window() : undefined,
+//     });
 
-    return (
-        <Slide appear={false} direction="down" in={!trigger}>
-            {children}
-        </Slide>
-    );
-}
-HideOnScroll.propTypes = {
-    children: PropTypes.element.isRequired,
-    window: PropTypes.func,
-};
+//     return (
+//         <Slide appear={false} direction="down" in={!trigger}>
+//             {children}
+//         </Slide>
+//     );
+// }
+// HideOnScroll.propTypes = {
+//     children: PropTypes.element.isRequired,
+//     window: PropTypes.func,
+// };
 
 
 //appear vertical navbar
@@ -96,7 +99,7 @@ function DrawerAppBar(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const theme = useTheme();
-    const [close, setClose] = React.useState(false);
+
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -105,31 +108,32 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{
-            textAlign: 'center', backgroundColor: "transparent",
-            color: "white", height: "100vh"
+            textAlign: 'center', backgroundColor: "primary.main",
+            color: "white", height: "100vh", pt: 3, borderTopRightRadius: "20px", borderBottomRightRadius: "20px",
         }}>
-            {/* <Box display="flex" justifyContent="space-between">
-                <IconButton onClick={() => setClose(!close)}>
-                    {!close ? <CloseIcon /> : ""}
 
-                </IconButton> */}
+            <IconButton >
+                <CloseIcon sx={{ color: "secondary.main", position: "absolute", left: "90px" }} />
 
+            </IconButton>
+            {/* 
             <Typography variant="h6" sx={{ my: 2 }}>
                 nada
-            </Typography>
+            </Typography> */}
 
-            <Divider light />
-            <List>
+
+            <List sx={{ display: "grid", direction: "column", justifyContent: "center", my: 3 }} >
                 <ListItem>
                     <a href="#home">
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton className={Styles.drawer_icon}>
                             <HomeIcon sx={{ color: "secondary.main", width: "50px" }} />
+                            <ListItemText primary="Home" />
                         </ListItemButton>
                     </a>
                 </ListItem>
                 <ListItem>
                     <a href="#about">
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton className={Styles.drawer_icon}>
                             <Person2Icon sx={{ mx: 2 }} />
                             <ListItemText primary="About" />
                         </ListItemButton>
@@ -137,7 +141,7 @@ function DrawerAppBar(props) {
                 </ListItem>
                 <ListItem>
                     <a href="#skills">
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton className={Styles.drawer_icon}>
                             < SensorOccupiedIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Skills" />
                         </ListItemButton>
@@ -145,7 +149,7 @@ function DrawerAppBar(props) {
                 </ListItem>
                 <ListItem>
                     <a href="#projects">
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton className={Styles.drawer_icon}>
                             <WorkIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Projects" />
                         </ListItemButton>
@@ -153,7 +157,7 @@ function DrawerAppBar(props) {
                 </ListItem>
                 <ListItem>
                     <a href="#contact">
-                        <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItemButton className={Styles.drawer_icon}>
                             <ConnectWithoutContactIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Contact" />
                         </ListItemButton>
@@ -169,19 +173,11 @@ function DrawerAppBar(props) {
         <>
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
-                <HideOnScroll {...props}>
-                    <AppBar variant="permanent" sx={{ background: 'transparent', color: "white", borderStyle: "none" }}>
-                        <Container>
-                            <Toolbar>
-                                <IconButton
-                                    color="inherit"
-                                    aria-label="open drawer"
-                                    edge="start"
-                                    onClick={handleDrawerToggle}
-                                    sx={{ mr: 2, display: { sm: 'none' } }}
-                                >
-                                    <MenuIcon />
-                                </IconButton>
+                {/* <HideOnScroll {...props}> */}
+                <AppBar variant="permanent" sx={{ background: 'transparent', color: "white", borderStyle: "none" }}>
+                    <Container>
+                        <Toolbar>
+                            <Box display='flex' flexGrow={1}>
                                 <Typography
                                     variant="h6"
                                     component="div"
@@ -228,11 +224,20 @@ function DrawerAppBar(props) {
                                         </ListItem>
                                     </List>
                                 </Box>
+                            </Box>
+                            <IconButton
+                                color="inherit"
+                                aria-label="open drawer"
+                                onClick={handleDrawerToggle}
+                                sx={{ display: { sm: 'none' } }}
+                            >
+                                <MenuIcon />
+                            </IconButton>
 
-                            </Toolbar>
-                        </Container>
-                    </AppBar>
-                </HideOnScroll>
+                        </Toolbar>
+                    </Container>
+                </AppBar>
+                {/* </HideOnScroll> */}
                 <Box component="nav">
                     <Drawer
                         container={container}
@@ -244,7 +249,10 @@ function DrawerAppBar(props) {
                         }}
                         sx={{
                             display: { xs: 'block', sm: 'none' },
-                            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                            '& .MuiDrawer-paper': {
+                                boxSizing: 'border-box', width: drawerWidth,
+                                borderTopRightRadius: "20px", borderBottomRightRadius: "20px", boxShadow: "none"
+                            },
                         }}
                     >
                         {drawer}

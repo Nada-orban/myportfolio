@@ -38,61 +38,66 @@ function Nav() {
     return (
         <>
 
-            <Box height="350px" width="50px" borderRadius="50px" position="fixed" right="30px" top="30vh" justifyContent="center" className={Styles.nav1} >
+            <Box height="350px" width="50px" borderRadius="50px" position="fixed" right="30px" top="30vh" justifyContent="center"  >
                 <Box position="relative">
                     <Timeline sx={{ position: "absolute", justifyContent: "center", right: "-5%", top: "15px" }}>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <a href='#home' className='active' >
-                                    <HomeIcon
+                                    <TimelineDot variant="outlined" />
+                                    {/* <HomeIcon
                                         className={Styles.icon}
 
-                                    />
+                                    /> */}
                                 </a>
 
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} />
+                                {/* <TimelineConnector sx={{ marginTop: "5px" }} />
+                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} /> */}
                             </TimelineSeparator>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <a href='#about'>
-                                    <Person2Icon className={Styles.icon} />
+                                    <TimelineDot variant="outlined" />
+                                    {/* <Person2Icon className={Styles.icon} /> */}
                                 </a>
 
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} />
+                                {/* <TimelineConnector sx={{ marginTop: "5px" }} />
+                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} /> */}
                             </TimelineSeparator>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
                                 <a href='#skills'>
-                                    < SensorOccupiedIcon sx={{ margin: "5px 0px", }} className={Styles.icon} />
+                                    <TimelineDot variant="outlined" />
+                                    {/* < SensorOccupiedIcon sx={{ margin: "5px 0px", }} className={Styles.icon} /> */}
                                 </a>
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} />
+                                {/* <TimelineConnector sx={{ marginTop: "5px" }} />
+                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} /> */}
                             </TimelineSeparator>
                         </TimelineItem>
 
                         <TimelineItem>
                             <TimelineSeparator>
                                 <a href='#mywork'>
-                                    <WorkIcon sx={{ margin: "5px 0px", }} className={Styles.icon} />
+                                    <TimelineDot variant="outlined" />
+                                    {/* <WorkIcon sx={{ margin: "5px 0px", }} className={Styles.icon} /> */}
                                 </a>
 
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px" }} />
-                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} />
+                                {/* <TimelineConnector sx={{ marginTop: "5px" }} />
+                                <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} /> */}
                             </TimelineSeparator>
                         </TimelineItem>
 
                         <TimelineItem>
                             <TimelineSeparator>
                                 <a href='#contacts'>
-                                    <ConnectWithoutContactIcon sx={{ margin: "5px 0px", }} className={Styles.icon} />
+                                    <TimelineDot variant="outlined" />
+                                    {/* <ConnectWithoutContactIcon sx={{ margin: "5px 0px", }} className={Styles.icon} /> */}
                                 </a>
                             </TimelineSeparator>
                         </TimelineItem>

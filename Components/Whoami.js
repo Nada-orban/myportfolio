@@ -51,9 +51,9 @@ function Whoami() {
                         <div className={styles.typedout}>Nada Orban</div>
                     </div>
                     {/* <Typography variant='h2'>Nada Orban</Typography> */}
-                    <Typography variant='h4'>FRONT END DEVELOPER</Typography>
+                    <Typography variant='h4' className="animate__animated animate__bounce">FRONT END DEVELOPER</Typography>
                 </Grid>
-                <Box display="flex" justifyContent="center" marginY="30px" gap="30px">
+                <Box display="flex" justifyContent="center" marginY="30px" gap="15px">
                     <Box borderRadius="10px" p="1" >
                         <a href="https://www.facebook.com/2447.nada.samir">
                             <FacebookIcon sx={{ width: "40px", height: "40px", color: "#3b5998" }} />
