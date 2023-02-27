@@ -18,12 +18,26 @@
     width: 150px;
     cursor: pointer;
     /* transition: all 2s ease-in;
-    transform: translateX(); */
-    animation: backInLeft;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
+    transform: translateX(-20px); */
+   
+
+    
+
 }
+/* @keyframes react-reveal-373047938003920-2{
+    0% {
+        
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        
+        left: 200px;
+        top: 0px;
+    }
+
+} */
 .drawer_icon:hover{
     color: black;
     background-color: #ef5350;

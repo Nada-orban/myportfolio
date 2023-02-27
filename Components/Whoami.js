@@ -9,6 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import Nav2 from './Nav2'
+
 // import videobackground from "../public/assets/images/Pexels_Videos_2833.mp4"
 // import styles from "../styles/Whomi.module.css"
 
@@ -16,7 +17,7 @@ import Nav2 from './Nav2'
 function Whoami() {
     return (
 
-        <Box padding="200px 0px 300px 0px" id="home" className={styles.backgroundimage} >
+        <Box padding="150px 0px 300px 0px" id="home" className={styles.backgroundimage} >
             <Nav2 />
             {/* <video
                 id="background-video"
@@ -37,23 +38,30 @@ function Whoami() {
                 Your browser does not support the video tag.
             </video> */}
             <Container>
-                <Grid container direction="column" justifyContent="center" alignItems="center"
-                >
-                    <Box borderRadius="50%" width="200px" height="200px" overflow="hidden" backgroundColor="red" marginBottom="20px">
-                        <Image
-                            src={profilePic}
-                            alt="Picture of the author"
-                            width={200}
-                            height={200}
-                        />
-                    </Box >
-                    <div className={styles.containertext}>
-                        <div className={styles.typedout}>Nada Orban</div>
-                    </div>
-                    {/* <Typography variant='h2'>Nada Orban</Typography> */}
-                    <Typography variant='h4' className="animate__animated animate__bounce">FRONT END DEVELOPER</Typography>
+                <Grid container >
+                    <Grid md={6} xs={12}>
+                        <Typography variant='h2'>Hello,</Typography>
+                        <div className={styles.containertext}>
+                            <div className={styles.typedout}>Nada Orban</div>
+                        </div>
+                        {/* <Typography variant='h2'>Nada Orban</Typography> */}
+                        <Typography variant='h4' className="animate__animated animate__bounce">FRONT END DEVELOPER</Typography>
+                        <button className={styles.buttonStyle}>Download My CV</button>
+                    </Grid>
+                    <Grid md={6} xs={12}>
+                        <Box borderRadius="50%" width="200px" height="200px" overflow="hidden" marginBottom="20px">
+                            {/* <Image
+                                src={profilePic}
+                                alt="Picture of the author"
+                                width={200}
+                                height={200}
+                            /> */}
+                        </Box >
+                    </Grid>
+
+
                 </Grid>
-                <Box display="flex" justifyContent="center" marginY="30px" gap="15px">
+                <Box display="flex" justifyContent="center" marginY="200px" gap="15px">
                     <Box borderRadius="10px" p="1" >
                         <a href="https://www.facebook.com/2447.nada.samir">
                             <FacebookIcon sx={{ width: "40px", height: "40px", color: "#3b5998" }} />

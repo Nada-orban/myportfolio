@@ -1,5 +1,19 @@
 
 
+.buttonStyle {
+  border-radius: 20px;
+  background-color:var(--secondray-maincolor) ;
+  color: white;
+  padding: 15px 20px;
+  border-style: none;
+  font-size: large;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
+
 /* ######################who am i######################## */
 /* .video{
   width: 100%;
@@ -45,9 +59,9 @@
     font-size:40px;
     width: 0;
     white-space: nowrap;
-    animation: typing 1s steps(20, end) forwards ;
+    animation: typing 4s steps(20, end) infinite ;
     
-    color:#e53935;
+    color:var(--secondray-maincolor);
 }
 
 @keyframes typing {

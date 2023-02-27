@@ -27,7 +27,8 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import Slide from '@mui/material/Slide';
 import Nav from './Nav'
 import { Directions } from '@mui/icons-material';
-
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Fab from '@mui/material/Fab';
 
 
 const drawerWidth = 240;
@@ -54,10 +55,13 @@ const drawerWidth = 240;
 //appear vertical navbar
 function ScrollTop(props) {
     const { children, window } = props;
+    // Note that you normally won't need to set the window ref as useScrollTrigger
+    // will default to window.
+    // This is only being set here because the demo is in an iframe.
     const trigger = useScrollTrigger({
         target: window ? window() : undefined,
         disableHysteresis: true,
-        threshold: 300,
+        threshold: 100,
     });
 
     const handleClick = (event) => {
@@ -87,6 +91,10 @@ function ScrollTop(props) {
 
 ScrollTop.propTypes = {
     children: PropTypes.element.isRequired,
+    /**
+     * Injected by the documentation to work in an iframe.
+     * You won't need it on your project.
+     */
     window: PropTypes.func,
 };
 
@@ -237,6 +245,7 @@ function DrawerAppBar(props) {
                         </Toolbar>
                     </Container>
                 </AppBar>
+
                 {/* </HideOnScroll> */}
                 <Box component="nav">
                     <Drawer
@@ -261,19 +270,22 @@ function DrawerAppBar(props) {
 
             </Box >
             <ScrollTop {...props}>
-                <Nav />
+                <Fab size="small" aria-label="scroll back to top">
+                    <KeyboardArrowUpIcon />
+                </Fab>
+
             </ScrollTop>
 
         </>
     );
 }
 
-DrawerAppBar.propTypes = {
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
-};
+// DrawerAppBar.propTypes = {
+//     /**
+//      * Injected by the documentation to work in an iframe.
+//      * You won't need it on your project.
+//      */
+//     window: PropTypes.func,
+// };
 
 export default DrawerAppBar;

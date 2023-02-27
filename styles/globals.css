@@ -1,4 +1,6 @@
-
+:root {
+  --secondray-maincolor: #e53935;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -17,7 +19,7 @@ h1,h2,h4,h5,h6 {
   font-weight: bold;
 }
 
-body {
+
   /* background: #bdc3c7;
   
   background: linear-gradient(to top, #2c3e50, #bdc3c7); */
@@ -33,7 +35,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-}
+
 
 a {
   color: inherit;
