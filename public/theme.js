@@ -44,6 +44,7 @@ export const themeSettongs = (mode) => {
                     green: green[400],
                     red: red[500],
                     blue: blue[900],
+                    black: grey[800]
                 },
                 background: {
                     main: grey[100],

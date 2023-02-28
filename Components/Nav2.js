@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
-import { Box, Container, Fade } from '@mui/material';
+import { Box, Container, Fade, Slide } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
@@ -24,9 +24,6 @@ import SensorOccupiedIcon from '@mui/icons-material/SensorOccupied';
 import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact'
 import CloseIcon from '@mui/icons-material/Close';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Slide from '@mui/material/Slide';
-import Nav from './Nav'
-import { Directions } from '@mui/icons-material';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fab from '@mui/material/Fab';
 
@@ -34,22 +31,22 @@ import Fab from '@mui/material/Fab';
 const drawerWidth = 240;
 
 //hide navbar
-// function HideOnScroll(props) {
-//     const { children, window } = props;
-//     const trigger = useScrollTrigger({
-//         target: window ? window() : undefined,
-//     });
+function HideOnScroll(props) {
+    const { children, window } = props;
+    const trigger = useScrollTrigger({
+        target: window ? window() : undefined,
+    });
 
-//     return (
-//         <Slide appear={false} direction="down" in={!trigger}>
-//             {children}
-//         </Slide>
-//     );
-// }
-// HideOnScroll.propTypes = {
-//     children: PropTypes.element.isRequired,
-//     window: PropTypes.func,
-// };
+    return (
+        <Slide appear={false} direction="down" in={!trigger}>
+            {children}
+        </Slide>
+    );
+}
+HideOnScroll.propTypes = {
+    children: PropTypes.element.isRequired,
+    window: PropTypes.func,
+};
 
 
 //appear vertical navbar
@@ -179,74 +176,74 @@ function DrawerAppBar(props) {
 
     return (
         <>
-            <Box sx={{ display: 'flex' }}>
+            <Box sx={{ display: 'flex' }} >
                 <CssBaseline />
-                {/* <HideOnScroll {...props}> */}
-                <AppBar variant="permanent" sx={{ background: 'transparent', color: "white", borderStyle: "none" }}>
-                    <Container>
-                        <Toolbar>
-                            <Box display='flex' flexGrow={1}>
-                                <Typography
-                                    variant="h6"
-                                    component="div"
-                                    sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "secondary.main" }}
-                                >
-                                    NADA
-                                </Typography>
-                                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                                    <List sx={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
-                                        <ListItem>
-                                            <a href="#home">
-                                                <ListItemButton >
-                                                    <HomeIcon sx={{ color: "secondary.main", width: "30px", height: "30px" }} />
-                                                </ListItemButton>
-                                            </a>
-                                        </ListItem>
-                                        <ListItem>
-                                            <a href="#about">
-                                                <ListItemButton sx={{ textAlign: 'center' }}>
-                                                    <ListItemText primary="About" className={Styles.icon} />
-                                                </ListItemButton>
-                                            </a>
-                                        </ListItem>
-                                        <ListItem>
-                                            <a href="#skills">
-                                                <ListItemButton sx={{ textAlign: 'center' }}>
-                                                    <ListItemText primary="Skills" />
-                                                </ListItemButton>
-                                            </a>
-                                        </ListItem>
-                                        <ListItem>
-                                            <a href="#projects">
-                                                <ListItemButton sx={{ textAlign: 'center' }}>
-                                                    <ListItemText primary="Projects" />
-                                                </ListItemButton>
-                                            </a>
-                                        </ListItem>
-                                        <ListItem>
-                                            <a href="#contact">
-                                                <ListItemButton sx={{ textAlign: 'center' }}>
-                                                    <ListItemText primary="Contact" />
-                                                </ListItemButton>
-                                            </a>
-                                        </ListItem>
-                                    </List>
+                <HideOnScroll {...props}>
+                    <AppBar variant="permanent" sx={{ background: 'transparent', color: "white", borderStyle: "none" }} className="animate__animated animate__fadeInDown">
+                        <Container>
+                            <Toolbar>
+                                <Box display='flex' flexGrow={1}>
+                                    <Typography
+                                        variant="h6"
+                                        component="div"
+                                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "secondary.main" }}
+                                    >
+                                        NADA
+                                    </Typography>
+                                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                                        <List sx={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
+                                            <ListItem>
+                                                <a href="#home">
+                                                    <ListItemButton >
+                                                        <HomeIcon sx={{ color: "secondary.main", width: "30px", height: "30px" }} />
+                                                    </ListItemButton>
+                                                </a>
+                                            </ListItem>
+                                            <ListItem>
+                                                <a href="#about">
+                                                    <ListItemButton sx={{ textAlign: 'center' }}>
+                                                        <ListItemText primary="About" className={Styles.icon} />
+                                                    </ListItemButton>
+                                                </a>
+                                            </ListItem>
+                                            <ListItem>
+                                                <a href="#skills">
+                                                    <ListItemButton sx={{ textAlign: 'center' }}>
+                                                        <ListItemText primary="Skills" />
+                                                    </ListItemButton>
+                                                </a>
+                                            </ListItem>
+                                            <ListItem>
+                                                <a href="#projects">
+                                                    <ListItemButton sx={{ textAlign: 'center' }}>
+                                                        <ListItemText primary="Projects" />
+                                                    </ListItemButton>
+                                                </a>
+                                            </ListItem>
+                                            <ListItem>
+                                                <a href="#contact">
+                                                    <ListItemButton sx={{ textAlign: 'center' }}>
+                                                        <ListItemText primary="Contact" />
+                                                    </ListItemButton>
+                                                </a>
+                                            </ListItem>
+                                        </List>
+                                    </Box>
                                 </Box>
-                            </Box>
-                            <IconButton
-                                color="inherit"
-                                aria-label="open drawer"
-                                onClick={handleDrawerToggle}
-                                sx={{ display: { sm: 'none' } }}
-                            >
-                                <MenuIcon />
-                            </IconButton>
+                                <IconButton
+                                    color="inherit"
+                                    aria-label="open drawer"
+                                    onClick={handleDrawerToggle}
+                                    sx={{ display: { sm: 'none' } }}
+                                >
+                                    <MenuIcon />
+                                </IconButton>
 
-                        </Toolbar>
-                    </Container>
-                </AppBar>
+                            </Toolbar>
+                        </Container>
+                    </AppBar>
 
-                {/* </HideOnScroll> */}
+                </HideOnScroll>
                 <Box component="nav">
                     <Drawer
                         container={container}

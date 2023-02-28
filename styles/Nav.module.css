@@ -19,7 +19,9 @@
     cursor: pointer;
     /* transition: all 2s ease-in;
     transform: translateX(-20px); */
-   
+    /* animation-fill-mode: both;
+    animation-delay: 1s;
+    */
 
     
 

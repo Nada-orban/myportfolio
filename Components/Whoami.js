@@ -17,7 +17,7 @@ import Nav2 from './Nav2'
 function Whoami() {
     return (
 
-        <Box padding="150px 0px 300px 0px" id="home" className={styles.backgroundimage} >
+        <Box py="250px " id="home" className={styles.backgroundimage} >
             <Nav2 />
             {/* <video
                 id="background-video"
@@ -39,16 +39,16 @@ function Whoami() {
             </video> */}
             <Container>
                 <Grid container >
-                    <Grid md={6} xs={12}>
+                    <Grid md={6} xs={12} className="animate__animated animate__fadeInLeft">
                         <Typography variant='h2'>Hello,</Typography>
                         <div className={styles.containertext}>
                             <div className={styles.typedout}>Nada Orban</div>
                         </div>
                         {/* <Typography variant='h2'>Nada Orban</Typography> */}
-                        <Typography variant='h4' className="animate__animated animate__bounce">FRONT END DEVELOPER</Typography>
+                        <Typography variant='h4' >FRONT END DEVELOPER</Typography>
                         <button className={styles.buttonStyle}>Download My CV</button>
                     </Grid>
-                    <Grid md={6} xs={12}>
+                    <Grid md={6} xs={12} className="animate__animated animate__fadeInRight">
                         <Box borderRadius="50%" width="200px" height="200px" overflow="hidden" marginBottom="20px">
                             {/* <Image
                                 src={profilePic}
@@ -61,7 +61,7 @@ function Whoami() {
 
 
                 </Grid>
-                <Box display="flex" justifyContent="center" marginY="200px" gap="15px">
+                <Box display="flex" justifyContent="center" mt="100px" gap="15px">
                     <Box borderRadius="10px" p="1" >
                         <a href="https://www.facebook.com/2447.nada.samir">
                             <FacebookIcon sx={{ width: "40px", height: "40px", color: "#3b5998" }} />
@@ -103,31 +103,3 @@ function Whoami() {
 
 export default Whoami
 
-// {/* <Grid container spacing={2}>
-//                     <Grid item xs={9} md={9}>
-//                         <Typography variant="h3" component="h2">
-//                             Hello!
-//                         </Typography>
-//                         <Typography variant="h2" component="h2">
-//                             I'm Nada Orban,
-//                         </Typography>
-//                         <Typography variant="h3" component="h3">
-//                             FRONT-END-DEVELOPER
-//                         </Typography>
-//                         <button >Primary</button>
-//                     </Grid>
-//                     <Grid item xs={3} md={3} >
-//                         <Box borderRadius="50%" width="200px" height="200px" overflow="hidden" backgroundColor="red">
-//                             {/* <Image
-//                                 src={profilePic}
-//                                 alt="Picture of the author"
-//                                 width={200}
-//                                 height={200}
-
-
-//                             /> */}
-//                         </Box >
-
-//                     </Grid >
-
-//                 </Grid > * /}

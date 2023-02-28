@@ -77,5 +77,47 @@
 
 /* #########################about################# */
 /* ##################skills############### */
+
+.slider{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  
+
+}
+.slideTrack{
+  margin: 70px 0px;
+  width: calc(80px * 7);
+  /* perspective: 200px; */
+  animation: scroll 10s linear  infinite normal;
+  
+  
+}
+.slideTrack:hover{
+  animation-play-state: paused;
+}
+@keyframes scroll{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+
+  }
+}
+
+
+
+.paper{
+  transition: transform 1s;
+  cursor: pointer;
+  box-shadow: rgba(245, 101, 57, 0.3) 0px 0px 30px;
+
+}
+.paper:hover {
+  /* transform: translateZ(20px); */
+  transform: scale(1.2);
+}
+
 /* ################project############# */
 /* #############contact##############3 */

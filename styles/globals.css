@@ -18,6 +18,10 @@ body {
 h1,h2,h4,h5,h6 {
   font-weight: bold;
 }
+body{
+  background-color:#1d1d1d;
+  color: white;
+}
 
 
   /* background: #bdc3c7;
