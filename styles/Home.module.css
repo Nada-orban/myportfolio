@@ -10,7 +10,9 @@
   margin-top: 10px;
   cursor: pointer;
 }
-
+.spancolor{
+  color:var(--secondray-maincolor)
+}
 
 
 
@@ -32,6 +34,28 @@
   color: white;
   overflow: hidden;
  
+}
+.contactionbox{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 75%;
+  right: 45%;
+  gap: 15px;
+  
+}
+@media only screen and (max-width: 600px) {
+  .contactionbox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0px;
+    right: 20%;
+    gap: 15px;
+  
+  }
+
+  
 }
 /* .overlay{
   

@@ -61,7 +61,7 @@ function Whoami() {
 
 
                 </Grid>
-                <Box display="flex" justifyContent="center" mt="100px" gap="15px">
+                <Box className={styles.contactionbox}>
                     <Box borderRadius="10px" p="1" >
                         <a href="https://www.facebook.com/2447.nada.samir">
                             <FacebookIcon sx={{ width: "40px", height: "40px", color: "#3b5998" }} />
@@ -93,8 +93,8 @@ function Whoami() {
 
 
 
-            </Container>
-        </Box>
+            </Container >
+        </Box >
 
 
 

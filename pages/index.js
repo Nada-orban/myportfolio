@@ -31,14 +31,14 @@ export default function Home() {
 
 
 
-      <Container >
-
-        {/* <Nav /> */}
-        <About />
-        <Skills />
 
 
-      </Container>
+      {/* <Nav /> */}
+      <About />
+      <Skills />
+
+
+
     </>
   )
 }

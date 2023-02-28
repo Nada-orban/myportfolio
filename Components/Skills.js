@@ -17,35 +17,40 @@ import styles from '../styles/Home.module.css'
 function Skills() {
     const skillsArray = [Skill1, Skill2, Skill3, Skill4, Skill5, Skill6, Skill7]
     return (
-        <Box id="skills" py="10vh" className={styles.slider}>
-            <Typography variant='h2' sx={{ textAlign: "center" }}>
-                Skills
-            </Typography>
+        <Box backgroundColor="neutral.black" id="skills" py="10vh">
+            <Container>
+                <Box className={styles.slider} >
 
-            <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
-                {skillsArray.map((skill) => (
-                    <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
-                        <Image
-                            src={skill}
-                            alt="Picture of the author"
-                            width={80}
-                            height={80}
-                        />
-                    </Paper>
-                ))}
-                {skillsArray.map((skill) => (
-                    <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
-                        <Image
-                            src={skill}
-                            alt="Picture of the author"
-                            width={80}
-                            height={80}
-                        />
-                    </Paper>
-                ))}
+                    <Typography variant='h2' sx={{ textAlign: "center" }}>
+                        <span className={styles.spancolor}>My</span> Skills
+                    </Typography>
 
-            </Box>
+                    <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
+                        {skillsArray.map((skill) => (
+                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
+                                <Image
+                                    src={skill}
+                                    alt="Picture of the author"
+                                    width={80}
+                                    height={80}
+                                />
+                            </Paper>
+                        ))}
+                        {skillsArray.map((skill) => (
+                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
+                                <Image
+                                    src={skill}
+                                    alt="Picture of the author"
+                                    width={80}
+                                    height={80}
+                                />
+                            </Paper>
+                        ))}
 
+                    </Box>
+
+                </Box>
+            </Container>
         </Box>
     )
 }
