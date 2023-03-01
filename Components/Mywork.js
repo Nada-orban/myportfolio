@@ -32,7 +32,7 @@ function Mywork() {
                                 </CardContent>
                             </CardActionArea>
                             <CardActions sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                <IconButton sx={{ border: "1px solid red" }}><BsPlayFill /></IconButton>
+                                <IconButton sx={{ border: "1px solid red" }} ><BsPlayFill /></IconButton>
                                 <IconButton sx={{ border: "1px solid red" }}><BiCodeAlt /></IconButton>
                             </CardActions>
                         </Card>
