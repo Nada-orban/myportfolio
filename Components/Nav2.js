@@ -181,7 +181,7 @@ function DrawerAppBar(props) {
             <Box sx={{ display: 'flex' }} >
                 <CssBaseline />
                 <HideOnScroll {...props}>
-                    <AppBar variant="permanent" sx={{ background: 'transparent', color: "white", borderStyle: "none" }} className="animate__animated animate__fadeInDown">
+                    <AppBar variant="permanent" sx={{ backgroundColor: 'black', color: "white", borderStyle: "none" }} className="animate__animated animate__fadeInDown">
                         <Container>
                             <Toolbar>
                                 <Box display='flex' flexGrow={1}>

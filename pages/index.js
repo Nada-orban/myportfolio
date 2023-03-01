@@ -8,6 +8,7 @@ import Whoami from '../Components/Whoami'
 import About from '../Components/About'
 import Nav2 from '../Components/Nav2'
 import Skills from '../Components/Skills'
+import Mywork from '../Components/Mywork'
 
 
 export default function Home() {
@@ -36,6 +37,7 @@ export default function Home() {
       {/* <Nav /> */}
       <About />
       <Skills />
+      <Mywork />
 
 
 
