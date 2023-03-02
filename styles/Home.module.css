@@ -164,7 +164,7 @@
   
 }
 .textCard{
-  border: 1px solid black;
+  
   width: fit-content;
   padding: 10px 20px;
   border-radius: 10px;
@@ -172,7 +172,7 @@
   z-index: 30;
   left: -100px;
   top:10px;
-  background-color: black;
+  background-color: #1d1d1d;
   color: white;
   transition: all 1s ease-in-out;
   transition-delay: .5s;
@@ -185,13 +185,14 @@
 
 
 
-.playbutton{
-  border: 1px solid black;
 
+.cardbutton{
+  border: 1px solid #1d1d1d;
 }
-.codebutton{
-  border: 1px solid black;
-
+.cardbutton:hover{
+  background-color: var(--secondray-maincolor);
+  border-style: none;
+  
 }
 
 .demobox{

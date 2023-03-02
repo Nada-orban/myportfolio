@@ -34,15 +34,15 @@ function Mywork() {
                             </CardActionArea>
                             <CardActions sx={{
                                 display: "flex", justifyContent: "space-between",
-                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3,
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.playbutton} ><BsPlayFill /></IconButton>
+                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
                                 </Box>
 
                                 <Box className={styles.codebox}>
-                                    <IconButton className={styles.codebutton}><BiCodeAlt /></IconButton>
+                                    <IconButton className={styles.cardbutton}><BiCodeAlt style={{ color: "black" }} /></IconButton>
                                     <Box className={styles.infobox2}>
                                         <Typography>HTML</Typography>
                                         <Typography>CSS</Typography>
