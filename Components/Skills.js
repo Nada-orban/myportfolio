@@ -30,7 +30,7 @@ function Skills() {
                             <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
                                 <Image
                                     src={skill}
-                                    alt="Picture of the author"
+                                    alt="Picture of the skill"
                                     width={80}
                                     height={80}
                                 />

@@ -144,4 +144,140 @@
 }
 
 /* ################project############# */
+/* .projectCard{
+  box-shadow:rgba(245, 101, 57, 0.3) 0px 0px 30px;
+} */
+.imageCard{
+  position: relative;
+  overflow: hidden;
+}
+.imageCard::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: rgba(138, 130, 130, 0.432);
+  height: 100%;
+  top:-100%;
+  left: 0px;
+  z-index: 1;
+  transition: all 1s ease-in-out;
+  
+}
+.textCard{
+  border: 1px solid black;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 30;
+  left: -100px;
+  top:10px;
+  background-color: black;
+  color: white;
+  transition: all 1s ease-in-out;
+  transition-delay: .5s;
+
+}
+.textCard:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+.playbutton{
+  border: 1px solid black;
+
+}
+.codebutton{
+  border: 1px solid black;
+
+}
+
+.demobox{
+display: flex;
+align-items: center;
+}
+.infobox1 {
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 5px 10px 5px 50px;
+  position: absolute;
+  left:-130px;
+  bottom: 5x;
+}
+
+.infobox2 {
+  border-radius: 10px;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 5px 60px 5px 10px;
+  position: absolute;
+  right: -160px;
+  bottom: 5x;
+}
+
+.codebox {
+  display: flex;
+  align-items: center;
+}
+/* .projectCard:hover{
+  box-shadow:rgba(245, 101, 57, 0.3) 5px 10px 30px 10px;
+  
+
+} */
+  
+.projectCard:hover .codebox{
+  animation:movebox1  1s ease-in-out both  ;
+      animation-delay: 0ms;
+      opacity: 1;
+  
+  }
+  .projectCard:hover .imageCard::before{
+    transform: translateY(100%);
+
+  }
+  .projectCard:hover .demobox{
+    animation:movebox2 1s ease-in-out both;
+    animation-delay: 0ms;
+    opacity: 1;
+
+  }
+  .projectCard:hover .textCard{
+    transform: translateX(90px);
+  }
+
+
+
+@keyframes movebox1{
+  0%{
+    opacity: 0;
+    transform: translateX(0);
+  }
+  
+  
+  100% {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+}
+
+@keyframes movebox2 {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translateX(90px);
+  }
+ 
+}
+
+
+
+
 /* #############contact##############3 */

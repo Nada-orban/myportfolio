@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import { BiCodeAlt } from 'react-icons/bi'
 import { BsPlayFill } from 'react-icons/bs'
 import Resto from '../public/assets/projects/Screenshot from 2023-03-01 13-31-38.png'
+import Image from 'next/image'
 
 function Mywork() {
     return (
@@ -16,28 +17,43 @@ function Mywork() {
                 </Box>
                 <Grid container spacing={2} sx={{ my: 6, }}>
                     <Grid item xs={12} md={4}>
-                        <Card sx={{ maxWidth: 345, borderRadius: "10px" }}>
+                        <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    height="140"
-                                    image={Resto}
-                                    alt="green iguana"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="div">
-                                        Lizard
-                                    </Typography>
+                                <CardMedia className={styles.imageCard}>
+                                    <Image
+                                        src={Resto}
+                                        alt="Picture of the project"
+                                        width={330}
+                                        height={180}
+                                    />
+                                    <Box className={styles.textCard}>
+                                        <Typography>Resto</Typography>
+                                    </Box>
+                                </CardMedia>
 
-                                </CardContent>
                             </CardActionArea>
-                            <CardActions sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                                <IconButton sx={{ border: "1px solid red" }} ><BsPlayFill /></IconButton>
-                                <IconButton sx={{ border: "1px solid red" }}><BiCodeAlt /></IconButton>
+                            <CardActions sx={{
+                                display: "flex", justifyContent: "space-between",
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3
+                            }}>
+                                <Box className={styles.demobox}>
+                                    <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
+                                    <IconButton className={styles.playbutton} ><BsPlayFill /></IconButton>
+                                </Box>
+
+                                <Box className={styles.codebox}>
+                                    <IconButton className={styles.codebutton}><BiCodeAlt /></IconButton>
+                                    <Box className={styles.infobox2}>
+                                        <Typography>HTML</Typography>
+                                        <Typography>CSS</Typography>
+                                        <Typography>JAVASCRIPT</Typography>
+                                    </Box>
+                                </Box>
                             </CardActions>
                         </Card>
 
                     </Grid>
+
 
                 </Grid>
 
