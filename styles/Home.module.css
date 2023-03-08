@@ -170,7 +170,7 @@
   border-radius: 10px;
   position: absolute;
   z-index: 30;
-  left: -100px;
+  left: -150px;
   top:10px;
   background-color: #1d1d1d;
   color: white;
@@ -246,7 +246,7 @@ align-items: center;
 
   }
   .projectCard:hover .textCard{
-    transform: translateX(90px);
+    transform: translateX(140px);
   }
 
 

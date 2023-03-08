@@ -188,7 +188,7 @@ function DrawerAppBar(props) {
                                     <Typography
                                         variant="h6"
                                         component="div"
-                                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "secondary.main" }}
+                                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: "secondary.main", mt: 3 }}
                                     >
                                         NADA
                                     </Typography>

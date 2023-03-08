@@ -9,6 +9,7 @@ import About from '../Components/About'
 import Nav2 from '../Components/Nav2'
 import Skills from '../Components/Skills'
 import Mywork from '../Components/Mywork'
+import Contact from '../Components/Contact'
 
 
 export default function Home() {
@@ -38,6 +39,7 @@ export default function Home() {
       <About />
       <Skills />
       <Mywork />
+      <Contact />
 
 
 
