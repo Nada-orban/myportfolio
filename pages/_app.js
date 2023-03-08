@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { ThemeProvider, CssBaseline } from '@mui/material';
 import { ColorModeContext, useMode } from '../public/theme'
 import { styled, useTheme, alpha } from '@mui/material/styles';
+import Nav2 from '../Components/Nav2';
 
 
 export default function App({ Component, pageProps }) {
@@ -11,6 +12,7 @@ export default function App({ Component, pageProps }) {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <Nav2 />
 
         <Component {...pageProps} />
         {/* <style jsx global>{`

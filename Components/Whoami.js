@@ -8,7 +8,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
-import Nav2 from './Nav2'
+
+import MenuNav from './MenuNav'
 
 // import videobackground from "../public/assets/images/Pexels_Videos_2833.mp4"
 // import styles from "../styles/Whomi.module.css"
@@ -18,7 +19,7 @@ function Whoami() {
     return (
 
         <Box py="250px " id="home" className={styles.backgroundimage} >
-            <Nav2 />
+
             {/* <video
                 id="background-video"
                 loop

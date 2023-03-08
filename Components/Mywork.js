@@ -159,7 +159,7 @@ function Mywork() {
                                     <Box className={styles.infobox2}>
                                         <Typography>HTML & CSS </Typography>
                                         <Typography> BOOTSTRAP</Typography>
-                                        <Typography> REACT</Typography>
+                                        <Typography>  REACT</Typography>
                                     </Box>
                                 </Box>
                             </CardActions>

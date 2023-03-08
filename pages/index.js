@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import Nav from '../Components/Nav'
 import { Container } from '@mui/material'
 import Whoami from '../Components/Whoami'
 import About from '../Components/About'
@@ -10,6 +9,9 @@ import Nav2 from '../Components/Nav2'
 import Skills from '../Components/Skills'
 import Mywork from '../Components/Mywork'
 import Contact from '../Components/Contact'
+
+
+
 
 
 export default function Home() {
@@ -29,17 +31,19 @@ export default function Home() {
         />
 
       </Head>
+
       <Whoami />
-
-
-
-
-
-      {/* <Nav /> */}
       <About />
       <Skills />
       <Mywork />
       <Contact />
+
+
+
+
+
+
+
 
 
 
