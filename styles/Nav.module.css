@@ -11,10 +11,10 @@
 /* ######################Nav2###################### */
 .drawer_icon{
     text-align: center;
-    border: 1px solid #ef5350;
+    border: 1px solid #dc965a;
     padding: 5px 0px;
     border-radius: 20px;
-    color:#ef5350;
+    color:#dc965a;
     width: 150px;
     cursor: pointer;
     /* transition: all 2s ease-in;

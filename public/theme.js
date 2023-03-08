@@ -7,12 +7,13 @@ export const themeSettongs = (mode) => {
     return {
         palette: {
             mode: mode,
-            ...(mode === "dark" ? {
+            ...(mode === "light" ? {
                 primary: {
-                    main: indigo[600],
+                    main: grey[800],
                 },
                 secondary: {
-                    main: "rgb(52, 71, 103)",
+                    // main: red[400],
+                    main: "#dc965a"
                 },
                 neutral: {
                     greenlight: green[300],
@@ -22,11 +23,12 @@ export const themeSettongs = (mode) => {
                     blue: blue[900],
                 },
                 background: {
-                    main: indigo[900],
+                    main: "#fff",
+                    secondary: "#fff5ec"
                     // main: "rgb(52, 71, 103)",
                 },
                 text: {
-                    primary: '#fff',
+                    primary: 'black',
                     secondary: grey[500],
                 },
 
@@ -36,7 +38,8 @@ export const themeSettongs = (mode) => {
                     main: grey[800],
                 },
                 secondary: {
-                    main: red[400],
+                    // main: red[400],
+                    main: "#dc965a"
                 },
                 neutral: {
                     brownlight: brown[200],
@@ -44,12 +47,15 @@ export const themeSettongs = (mode) => {
                     green: green[400],
                     red: red[500],
                     blue: blue[900],
-                    black: grey[900]
+                    black: "black",
+                    skill: "white"
                 },
                 background: {
-                    main: grey[100],
+                    main: "#1c1d24 ",
+                    secondary: "black"
+                    // secondary: " #1d1d1d"
                 }, text: {
-                    primary: "black",
+                    primary: "white",
                     secondary: grey[500],
                 },
 
@@ -71,7 +77,7 @@ export const ColorModeContext = createContext({
 });
 
 export const useMode = () => {
-    const [mode, setMode] = useState("light");
+    const [mode, setMode] = useState("dark");
     const colorMode = useMemo(() => ({
         toggleColorMode: () => {
             setMode((prev) => (prev === "dark" ? "light" : "dark"))

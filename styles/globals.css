@@ -1,5 +1,7 @@
 :root {
-  --secondray-maincolor: #e53935;
+  
+  --secondray-maincolor: #dc965a;
+  /* --secondray-maincolor: #e53935; */
 }
 * {
   box-sizing: border-box;
@@ -19,7 +21,7 @@ h1,h2,h4,h5,h6 {
   font-weight: bold;
 }
 body{
-  background-color:#1d1d1d;
+  background-color:#1c1d24;
   color: white;
 }
 

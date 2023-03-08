@@ -17,7 +17,7 @@ import styles from '../styles/Home.module.css'
 function Skills() {
     const skillsArray = [Skill1, Skill2, Skill3, Skill4, Skill5, Skill6, Skill7]
     return (
-        <Box backgroundColor="neutral.black" id="skills" py="10vh">
+        <Box backgroundColor="background.secondary" id="skills" py="10vh">
             <Container>
                 <Box className={styles.slider} >
 
@@ -27,7 +27,7 @@ function Skills() {
 
                     <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
                         {skillsArray.map((skill) => (
-                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
+                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px", backgroundColor: "white" }} className={styles.paper}>
                                 <Image
                                     src={skill}
                                     alt="Picture of the skill"
@@ -37,7 +37,7 @@ function Skills() {
                             </Paper>
                         ))}
                         {skillsArray.map((skill) => (
-                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px" }} className={styles.paper}>
+                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px", backgroundColor: "white" }} className={styles.paper}>
                                 <Image
                                     src={skill}
                                     alt="Picture of the author"

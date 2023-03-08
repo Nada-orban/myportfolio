@@ -24,12 +24,12 @@ const Item = styled(Paper)(({ theme }) => ({
 function Contact() {
     const theme = useTheme();
     return (
-        <Box id="contact" pt="20vh" pb="20vh" >
+        <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary">
             <Container>
                 <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6 }}>
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
-                <Grid container spacing={10}>
+                <Grid container spacing={10} sx={{ mt: 3 }}>
                     <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "40px" }}>
                         <TextField
                             id="name"

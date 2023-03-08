@@ -7,6 +7,8 @@ import Resto from '../public/assets/projects/Screenshot from 2023-03-01 13-31-38
 import shoponline from '../public/assets/projects/Screenshot from 2023-03-01 23-34-07.png'
 import image3 from '../public/assets/projects/Screenshot from 2023-03-01 23-37-42.png'
 import image4 from '../public/assets/projects/Screenshot from 2023-03-03 14-23-41.png'
+import dashboardimage from '../public/assets/projects/Screenshot from 2023-03-07 21-36-22.png'
+import storeimage from '../public/assets/projects/Screenshot from 2023-03-07 23-03-28.png'
 import Image from 'next/image'
 
 function Mywork() {
@@ -37,7 +39,7 @@ function Mywork() {
                             </CardActionArea>
                             <CardActions sx={{
                                 display: "flex", justifyContent: "space-between",
-                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3,
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3, backgroundColor: "white"
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
@@ -73,7 +75,7 @@ function Mywork() {
                             </CardActionArea>
                             <CardActions sx={{
                                 display: "flex", justifyContent: "space-between",
-                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3,
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3, backgroundColor: "white"
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
@@ -110,7 +112,7 @@ function Mywork() {
                             </CardActionArea>
                             <CardActions sx={{
                                 display: "flex", justifyContent: "space-between",
-                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3,
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3, backgroundColor: "white"
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
@@ -147,7 +149,7 @@ function Mywork() {
                             </CardActionArea>
                             <CardActions sx={{
                                 display: "flex", justifyContent: "space-between",
-                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3,
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3, backgroundColor: "white"
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
@@ -166,6 +168,82 @@ function Mywork() {
                         </Card>
 
                     </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
+                            <CardActionArea>
+                                <CardMedia className={styles.imageCard}>
+                                    <Image
+                                        src={dashboardimage}
+                                        alt="Picture of the project"
+                                        width={330}
+                                        height={180}
+                                    />
+                                    <Box className={styles.textCard}>
+                                        <Typography>Dashboard</Typography>
+                                    </Box>
+                                </CardMedia>
+
+                            </CardActionArea>
+                            <CardActions sx={{
+                                display: "flex", justifyContent: "space-between",
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3, backgroundColor: "white"
+                            }}>
+                                <Box className={styles.demobox}>
+                                    <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
+                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                </Box>
+
+                                <Box className={styles.codebox}>
+                                    <IconButton className={styles.cardbutton}><BiCodeAlt style={{ color: "black" }} /></IconButton>
+                                    <Box className={styles.infobox2}>
+                                        <Typography>HTML & CSS </Typography>
+                                        <Typography> Material UI</Typography>
+                                        <Typography> NEXT</Typography>
+                                    </Box>
+                                </Box>
+                            </CardActions>
+                        </Card>
+
+                    </Grid>
+                    <Grid item xs={12} md={4}>
+                        <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
+                            <CardActionArea>
+                                <CardMedia className={styles.imageCard}>
+                                    <Image
+                                        src={storeimage}
+                                        alt="Picture of the project"
+                                        width={330}
+                                        height={180}
+                                    />
+                                    <Box className={styles.textCard}>
+                                        <Typography>Store</Typography>
+                                    </Box>
+                                </CardMedia>
+
+                            </CardActionArea>
+                            <CardActions sx={{
+                                display: "flex", justifyContent: "space-between",
+                                alignItems: "center", overflow: "hidden", position: "relative", height: "100px", px: 3, backgroundColor: "white"
+                            }}>
+                                <Box className={styles.demobox}>
+                                    <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
+                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                </Box>
+
+                                <Box className={styles.codebox}>
+                                    <IconButton className={styles.cardbutton}><BiCodeAlt style={{ color: "black" }} /></IconButton>
+                                    <Box className={styles.infobox2}>
+                                        <Typography>HTML & CSS </Typography>
+                                        <Typography> BOOTSTRAP</Typography>
+                                        <Typography> REACT</Typography>
+                                    </Box>
+                                </Box>
+                            </CardActions>
+                        </Card>
+
+                    </Grid>
+
+
 
 
                 </Grid>
