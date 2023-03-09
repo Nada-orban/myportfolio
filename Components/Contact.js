@@ -12,6 +12,8 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import jsonfile from '../public/assets/images/Chatting_01 (1).json'
+import Lottie from 'lottie-react'
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -24,7 +26,7 @@ const Item = styled(Paper)(({ theme }) => ({
 function Contact() {
     const theme = useTheme();
     return (
-        <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary">
+        <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
                 <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6 }}>
                     Contact <span className={styles.spancolor}>Me</span>
@@ -55,7 +57,7 @@ function Contact() {
                         <button className={styles.buttonStyle}>Send </button>
 
                     </Grid>
-                    <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px" }}>
+                    <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
                         <Box display="flex" gap="20px">
                             <Avatar sx={{
                                 bgcolor: "secondary.main"
@@ -95,14 +97,23 @@ function Contact() {
                             </a>
                         </Box>
 
+
                     </Grid>
+
+
 
                 </Grid>
 
 
 
 
+
             </Container>
+            <Box width="500px" height="400px" position="absolute" bottom="30px" right="0px">
+                <Lottie animationData={jsonfile} />
+
+            </Box>
+
         </Box >
     )
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, Tabs, Tab, Typography, LinkTab, Grid, Button, Container } from '@mui/material'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
@@ -8,32 +8,35 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
+import jsonfile from '../public/assets/images/soft_dev (3).json'
+import Lottie from 'lottie-react'
 
 import MenuNav from './MenuNav'
 
-// import videobackground from "../public/assets/images/Pexels_Videos_2833.mp4"
+import gif from "../public/assets/images/138767-laptop-animatiion.gif"
 // import styles from "../styles/Whomi.module.css"
 
 
 function Whoami() {
+
     return (
 
         <Box py="250px " id="home" className={styles.backgroundimage} >
 
             {/* <video
-                id="background-video"
+
                 loop
                 autoPlay
                 muted
-                style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "15rem",
-                    left: 0,
-                    top: 0,
-                    objectFit: "cover",
-                    zIndex: "-1",
-                }}
+            // style={{
+            //     position: "absolute",
+            //     width: "100%",
+            //     height: "15rem",
+            //     left: 0,
+            //     top: 0,
+            //     objectFit: "cover",
+            //     zIndex: "-1",
+            // }}
             >
                 <source src={videobackground} type="video/mp4" />
                 Your browser does not support the video tag.
@@ -41,8 +44,9 @@ function Whoami() {
             <Container>
                 <Grid container >
                     <Grid md={6} xs={12} className="animate__animated animate__fadeInLeft">
-                        <Typography variant='h2'>Hello,</Typography>
+                        <Typography variant='h2'>Hello,I'm</Typography>
                         <div className={styles.containertext}>
+
                             <div className={styles.typedout}>Nada Orban</div>
                         </div>
                         {/* <Typography variant='h2'>Nada Orban</Typography> */}
@@ -50,12 +54,16 @@ function Whoami() {
                         <button className={styles.buttonStyle}>Download My CV</button>
                     </Grid>
                     <Grid md={6} xs={12} className="animate__animated animate__fadeInRight">
-                        <Box borderRadius="50%" width="200px" height="200px" overflow="hidden" marginBottom="20px">
+
+                        <Box borderRadius="50%" width="500px" height="400px" overflow="hidden" marginBottom="20px">
+                            <Lottie animationData={jsonfile} />
+
                             {/* <Image
-                                src={profilePic}
+                                src={gif}
                                 alt="Picture of the author"
-                                width={200}
-                                height={200}
+                                width={300}
+                                height={300}
+
                             /> */}
                         </Box >
                     </Grid>

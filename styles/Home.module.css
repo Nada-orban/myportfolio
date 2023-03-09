@@ -24,7 +24,11 @@
 
 } */
 .backgroundimage{
-  background:linear-gradient( #000000bd,#424242),url("../public//assets/images/pexels-antonio-borriello-1297611.jpg");
+  background: linear-gradient(to right, #000000, #434343);
+  /* background: linear-gradient(to right, #4286f4, #373B44); */
+
+  /* background:linear-gradient( #000000bd,#424242); */
+
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
