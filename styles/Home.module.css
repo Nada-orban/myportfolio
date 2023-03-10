@@ -14,6 +14,11 @@
 .spancolor{
   color:var(--secondray-maincolor)
 }
+.redbox{
+  background-color: red;
+  width:"100px";
+  height: 100px;
+}
 
 
 

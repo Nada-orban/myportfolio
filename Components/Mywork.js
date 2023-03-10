@@ -16,12 +16,12 @@ function Mywork() {
         <Box id="projects" py="10vh">
             <Container Container >
                 <Box className={styles.slider} >
-                    <Typography variant='h2' sx={{ textAlign: "center", color: "text.primary" }}>
+                    <Typography variant='h2' sx={{ textAlign: "center", color: "text.primary" }} data-aos="flip-up">
                         <span className={styles.spancolor}>My</span> Work
                     </Typography>
                 </Box>
                 <Grid container spacing={2} sx={{ my: 6, }}>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} data-aos="fade-right" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -58,7 +58,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} data-aos="fade-down" data-aos-delay="500">
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -96,7 +96,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} data-aos="fade-left" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -134,7 +134,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} data-aos="fade-right" data-aos-delay="300" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -172,7 +172,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="500">
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -210,7 +210,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4}>
+                    <Grid item xs={12} md={4} data-aos="fade-left" data-aos-delay="300">
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>

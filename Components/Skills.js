@@ -23,7 +23,7 @@ function Skills() {
 
                     <Typography variant='h2' sx={{
                         textAlign: "center", mb: 3, color: "text.primary"
-                    }}>
+                    }} data-aos="flip-up">
                         <span className={styles.spancolor}>My</span> Skills
                     </Typography>
 

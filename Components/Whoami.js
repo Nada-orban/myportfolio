@@ -46,7 +46,7 @@ function Whoami() {
             </video> */}
             <Container>
                 <Grid container  >
-                    <Grid md={6} xs={12} className="animate__animated animate__fadeInLeft" sx={{ mt: 18 }}>
+                    <Grid md={6} xs={12} data-aos="fade-right" sx={{ mt: 18 }}>
                         <Typography variant='h2'>Hello,I'm</Typography>
                         <div className={styles.containertext}>
 
@@ -58,7 +58,7 @@ function Whoami() {
                     </Grid>
 
 
-                    <Grid md={6} xs={12} className="animate__animated animate__fadeInRight" >
+                    <Grid md={6} xs={12} data-aos="fade-down-left"   >
                         <Lottie animationData={jsonfile} />
 
                         {/* <Box width="520px" height="520px" overflow="hidden" backgroundColor="secondary.main" p="10px">
@@ -84,15 +84,15 @@ function Whoami() {
                             bgcolor: "white"
                         }} ><FacebookIcon /></Avatar>
                     </a> */}
-                    <a href='https://github.com/Nada-orban' >
+                    <a href='https://github.com/Nada-orban' data-aos="fade-left">
                         <Avatar className={styles.icon}><GitHubIcon sx={{ color: "black" }} /></Avatar>
                     </a>
-                    <a href='https://www.linkedin.com/in/nada-samir-441a58130/' >
+                    <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200">
                         <Avatar className={styles.icon} ><LinkedInIcon sx={{ color: "black" }} /></Avatar></a>
-                    <a href='' >
+                    <a href='' data-aos="fade-left" data-aos-delay="500">
                         <Avatar className={styles.icon}>< WhatsAppIcon sx={{ color: "black" }} /></Avatar>
                     </a>
-                    <a href='mailto:nadasamir9334@gmail.com' >
+                    <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800">
                         <Avatar className={styles.icon} ><EmailIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                 </Box>

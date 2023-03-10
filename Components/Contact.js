@@ -12,6 +12,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { SiUpwork } from 'react-icons/si'
 import jsonfile from '../public/assets/images/Chatting_01 (1).json'
 import Lottie from 'lottie-react'
 
@@ -63,16 +64,16 @@ function Contact() {
                     <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
                         <Box display="flex" gap="20px">
                             <Avatar className={styles.iconContact}><AlternateEmailIcon /></Avatar>
-                            <Typography variant='h5' sx={{ color: "text.primary"}}>nadasamir9334@gmail.com</Typography>
+                            <Typography variant='h5' sx={{ color: "text.primary" }}>nadasamir9334@gmail.com</Typography>
                         </Box>
                         <Box display="flex" gap="20px">
                             <Avatar className={styles.iconContact}><CallIcon /></Avatar>
-                            <Typography variant='h5' sx={{ color: "text.primary"}}>+1 01149629334</Typography>
+                            <Typography variant='h5' sx={{ color: "text.primary" }}>+1 01149629334</Typography>
                         </Box>
                         <Box display="flex" gap="30px" mt="20px">
-                            <a href="https://www.facebook.com/2447.nada.samir">
+                            {/* <a href="https://www.facebook.com/2447.nada.samir">
                                 <Avatar className={styles.iconContact}  ><FacebookIcon /></Avatar>
-                            </a>
+                            </a> */}
                             <a href='https://github.com/Nada-orban'>
                                 <Avatar className={styles.iconContact}  ><GitHubIcon /></Avatar>
                             </a>
@@ -81,8 +82,12 @@ function Contact() {
                             <a href=''>
                                 <Avatar className={styles.iconContact}  >< WhatsAppIcon /></Avatar>
                             </a>
-                            <a href='nadasamir9334@gmail.com'>
+
+                            <a href='mailto:nadasamir9334@gmail.com'>
                                 <Avatar className={styles.iconContact}  ><EmailIcon /></Avatar>
+                            </a>
+                            <a href='mailto:nadasamir9334@gmail.com'>
+                                <Avatar className={styles.iconContact}  ><SiUpwork /></Avatar>
                             </a>
                         </Box>
 
