@@ -59,41 +59,27 @@ function Contact() {
                     </Grid>
                     <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
                         <Box display="flex" gap="20px">
-                            <Avatar sx={{
-                                bgcolor: "secondary.main"
-                            }}><AlternateEmailIcon /></Avatar>
+                            <Avatar className={styles.iconContact}><AlternateEmailIcon /></Avatar>
                             <Typography variant='h5'>nadasamir9334@gmail.com</Typography>
                         </Box>
                         <Box display="flex" gap="20px">
-                            <Avatar sx={{
-                                bgcolor: "secondary.main"
-                            }}><CallIcon /></Avatar>
+                            <Avatar className={styles.iconContact}><CallIcon /></Avatar>
                             <Typography variant='h5'>+1 01149629334</Typography>
                         </Box>
                         <Box display="flex" gap="30px" mt="20px">
                             <a href="https://www.facebook.com/2447.nada.samir">
-                                <Avatar sx={{
-                                    bgcolor: "secondary.main"
-                                }} ><FacebookIcon /></Avatar>
+                                <Avatar className={styles.iconContact}  ><FacebookIcon /></Avatar>
                             </a>
                             <a href='https://github.com/Nada-orban'>
-                                <Avatar sx={{
-                                    bgcolor: "secondary.main"
-                                }} ><GitHubIcon /></Avatar>
+                                <Avatar className={styles.iconContact}  ><GitHubIcon /></Avatar>
                             </a>
                             <a href='https://www.linkedin.com/in/nada-samir-441a58130/'>
-                                <Avatar sx={{
-                                    bgcolor: "secondary.main"
-                                }} ><LinkedInIcon /></Avatar></a>
+                                <Avatar className={styles.iconContact}  ><LinkedInIcon /></Avatar></a>
                             <a href=''>
-                                <Avatar sx={{
-                                    bgcolor: "secondary.main"
-                                }} >< WhatsAppIcon /></Avatar>
+                                <Avatar className={styles.iconContact}  >< WhatsAppIcon /></Avatar>
                             </a>
                             <a href='nadasamir9334@gmail.com'>
-                                <Avatar sx={{
-                                    bgcolor: "secondary.main"
-                                }} ><EmailIcon /></Avatar>
+                                <Avatar className={styles.iconContact}  ><EmailIcon /></Avatar>
                             </a>
                         </Box>
 

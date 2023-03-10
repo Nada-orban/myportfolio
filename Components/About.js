@@ -18,15 +18,15 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function About() {
     return (
-        <Box id="about" py="10vh" className={styles.aboutbackground}>
+        <Box id="about" py="15vh" className={styles.aboutbackground}>
             <Container>
                 <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 4 }}>
                     About <span className={styles.spancolor}>Me</span>
                 </Typography>
                 <Grid container spacing={3}>
-                    <Grid item md={6} xs={12} sx={{ padding: "0px 0px", }}>
+                    <Grid item md={6} xs={12} sx={{ padding: "0px 0px", mb: 3 }}>
                         {/* <Lottie animationData={jsonfile} /> */}
-                        <Box width="420px" height="420px" overflow="hidden" p="10px" backgroundColor="secondary.main">
+                        <Box width="420px" height="420px" p="10px" className={styles.photobox} >
 
 
                             <Image
@@ -34,6 +34,7 @@ function About() {
                                 alt="Picture of the author"
                                 width={400}
                                 height={400}
+                                className={styles.photo}
 
                             />
                         </Box >

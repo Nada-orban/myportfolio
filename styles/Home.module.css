@@ -10,6 +10,7 @@
   margin-top: 15px;
   cursor: pointer;
 }
+
 .spancolor{
   color:var(--secondray-maincolor)
 }
@@ -63,6 +64,15 @@
 
   
 }
+.icon{
+  background-color: white;
+}
+.icon:hover{
+  background-color: var(--secondray-maincolor);
+  color: white;
+  transition: all 1s ease-in-out;
+  transform: translateY(-10px);
+}
 /* .overlay{
   
   background-color: black;
@@ -90,7 +100,6 @@
     width: 0;
     white-space: nowrap;
     animation: typing 4s steps(20, end) infinite ;
-    
     color:var(--secondray-maincolor);
 }
 
@@ -109,6 +118,37 @@
 .aboutbackground{
   background: linear-gradient(to left, #1c1d24 70%, #43434338 30%);
 
+}
+.photobox{
+  position: relative;
+  border:10px solid #dc965a;
+  
+  
+
+}
+.photo{
+  position: absolute;
+  /* bottom: -30px;
+  right: -30px; */
+  bottom: -30px;
+  right: -30px;
+  cursor: pointer;
+  
+
+}
+.photo:hover{
+  animation: photomove 1s  both;
+
+}
+@keyframes photomove {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translate(-30px,-30px);
+
+  }
 }
 /* ##################skills############### */
 
@@ -292,3 +332,13 @@ align-items: center;
 
 
 /* #############contact##############3 */
+.iconContact{
+  background-color: var(--secondray-maincolor);
+  cursor: pointer;
+}
+.iconContact:hover{
+  color: var(--secondray-maincolor);
+  background-color: white;
+  transition: all 1s ease-in-out;
+  transform: scale(1.3);
+}

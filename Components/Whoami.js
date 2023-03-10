@@ -84,24 +84,16 @@ function Whoami() {
                             bgcolor: "white"
                         }} ><FacebookIcon /></Avatar>
                     </a> */}
-                    <a href='https://github.com/Nada-orban'>
-                        <Avatar sx={{
-                            bgcolor: "white"
-                        }} ><GitHubIcon /></Avatar>
+                    <a href='https://github.com/Nada-orban' >
+                        <Avatar className={styles.icon}><GitHubIcon /></Avatar>
                     </a>
-                    <a href='https://www.linkedin.com/in/nada-samir-441a58130/'>
-                        <Avatar sx={{
-                            bgcolor: "white"
-                        }} ><LinkedInIcon /></Avatar></a>
-                    <a href=''>
-                        <Avatar sx={{
-                            bgcolor: "white"
-                        }} >< WhatsAppIcon /></Avatar>
+                    <a href='https://www.linkedin.com/in/nada-samir-441a58130/' >
+                        <Avatar className={styles.icon} ><LinkedInIcon /></Avatar></a>
+                    <a href='' >
+                        <Avatar className={styles.icon}>< WhatsAppIcon /></Avatar>
                     </a>
-                    <a href='nadasamir9334@gmail.com'>
-                        <Avatar sx={{
-                            bgcolor: "white"
-                        }} ><EmailIcon /></Avatar>
+                    <a href='mailto:nadasamir9334@gmail.com' >
+                        <Avatar className={styles.icon} ><EmailIcon /></Avatar>
                     </a>
                 </Box>
                 {/* <Box className={styles.contactionbox}>
