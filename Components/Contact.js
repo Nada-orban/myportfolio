@@ -38,6 +38,7 @@ function Contact() {
                             label="Name"
                             color="secondary"
                             focused
+                            InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
 
                         />
                         <TextField
@@ -45,6 +46,7 @@ function Contact() {
                             label="Email"
                             color="secondary"
                             focused
+                            InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
                         />
                         <TextField
                             id="message"
@@ -53,6 +55,7 @@ function Contact() {
                             multiline
                             rows={4}
                             focused
+                            InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
                         />
                         <button className={styles.buttonStyle}>Send </button>
 

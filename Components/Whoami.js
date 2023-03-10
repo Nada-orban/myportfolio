@@ -24,7 +24,7 @@ function Whoami() {
 
     return (
 
-        <Box pb="250px" pt="100px" id="home" className={styles.backgroundimage} >
+        <Box pb="250px" pt="150px" id="home" className={styles.backgroundimage} >
 
             {/* <video
 
