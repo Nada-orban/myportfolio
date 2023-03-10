@@ -21,13 +21,15 @@ function Skills() {
             <Container>
                 <Box className={styles.slider} >
 
-                    <Typography variant='h2' sx={{ textAlign: "center", mb: 3 }}>
+                    <Typography variant='h2' sx={{
+                        textAlign: "center", mb: 3, color: "text.primary"
+                    }}>
                         <span className={styles.spancolor}>My</span> Skills
                     </Typography>
 
                     <Box className={styles.slideTrack} display="flex" justifyContent="space-between" gap="50px" alignItems="center">
                         {skillsArray.map((skill) => (
-                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px", backgroundColor: "white" }} className={styles.paper}>
+                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px", backgroundColor: "text.primary" }} className={styles.paper}>
                                 <Image
                                     src={skill}
                                     alt="Picture of the skill"
@@ -37,7 +39,7 @@ function Skills() {
                             </Paper>
                         ))}
                         {skillsArray.map((skill) => (
-                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px", backgroundColor: "white" }} className={styles.paper}>
+                            <Paper sx={{ width: "150px", height: "150px", textAlign: "center", p: "30px", backgroundColor: "text.primary" }} className={styles.paper}>
                                 <Image
                                     src={skill}
                                     alt="Picture of the author"

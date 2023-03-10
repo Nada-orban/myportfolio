@@ -28,7 +28,7 @@ function Contact() {
     return (
         <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
-                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6 }}>
+                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6, color: "text.primary" }}>
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
                 <Grid container spacing={10} sx={{ mt: 3 }}>
@@ -63,11 +63,11 @@ function Contact() {
                     <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
                         <Box display="flex" gap="20px">
                             <Avatar className={styles.iconContact}><AlternateEmailIcon /></Avatar>
-                            <Typography variant='h5'>nadasamir9334@gmail.com</Typography>
+                            <Typography variant='h5' sx={{ color: "text.primary"}}>nadasamir9334@gmail.com</Typography>
                         </Box>
                         <Box display="flex" gap="20px">
                             <Avatar className={styles.iconContact}><CallIcon /></Avatar>
-                            <Typography variant='h5'>+1 01149629334</Typography>
+                            <Typography variant='h5' sx={{ color: "text.primary"}}>+1 01149629334</Typography>
                         </Box>
                         <Box display="flex" gap="30px" mt="20px">
                             <a href="https://www.facebook.com/2447.nada.samir">

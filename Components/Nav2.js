@@ -170,7 +170,7 @@ function DrawerAppBar(props) {
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{
             textAlign: 'center', backgroundColor: "background.main",
-            color: "white", height: "100vh", pt: 3, borderTopRightRadius: "20px", borderBottomRightRadius: "20px",
+            color: "text.primary", height: "100vh", pt: 3, borderTopRightRadius: "20px", borderBottomRightRadius: "20px",
         }}>
 
             <IconButton >
@@ -236,7 +236,7 @@ function DrawerAppBar(props) {
                 <CssBaseline />
                 <HideOnScroll {...props}>
                     <AppBar variant="permanent" sx={{
-                        backgroundColor: 'background.main', color: "white", borderStyle: "none"
+                        backgroundColor: 'background.main', color: "text:primary", borderStyle: "none"
                     }} className="animate__animated animate__fadeInDown">
                         <Container>
                             <Toolbar>
@@ -260,28 +260,28 @@ function DrawerAppBar(props) {
                                             <ListItem>
                                                 <a href="#about">
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                                        <ListItemText primary="About" className={Styles.icon} />
+                                                        <ListItemText primary="About" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
                                                 </a>
                                             </ListItem>
                                             <ListItem>
                                                 <a href="#skills">
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                                        <ListItemText primary="Skills" />
+                                                        <ListItemText primary="Skills" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
                                                 </a>
                                             </ListItem>
                                             <ListItem>
                                                 <a href="#projects">
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                                        <ListItemText primary="Projects" />
+                                                        <ListItemText primary="Projects" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
                                                 </a>
                                             </ListItem>
                                             <ListItem>
                                                 <a href="#contact">
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
-                                                        <ListItemText primary="Contact" />
+                                                        <ListItemText primary="Contact" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
                                                 </a>
                                             </ListItem>

@@ -85,15 +85,15 @@ function Whoami() {
                         }} ><FacebookIcon /></Avatar>
                     </a> */}
                     <a href='https://github.com/Nada-orban' >
-                        <Avatar className={styles.icon}><GitHubIcon /></Avatar>
+                        <Avatar className={styles.icon}><GitHubIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                     <a href='https://www.linkedin.com/in/nada-samir-441a58130/' >
-                        <Avatar className={styles.icon} ><LinkedInIcon /></Avatar></a>
+                        <Avatar className={styles.icon} ><LinkedInIcon sx={{ color: "black" }} /></Avatar></a>
                     <a href='' >
-                        <Avatar className={styles.icon}>< WhatsAppIcon /></Avatar>
+                        <Avatar className={styles.icon}>< WhatsAppIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                     <a href='mailto:nadasamir9334@gmail.com' >
-                        <Avatar className={styles.icon} ><EmailIcon /></Avatar>
+                        <Avatar className={styles.icon} ><EmailIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                 </Box>
                 {/* <Box className={styles.contactionbox}>

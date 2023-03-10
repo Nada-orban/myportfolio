@@ -16,7 +16,7 @@ function Mywork() {
         <Box id="projects" py="10vh">
             <Container Container >
                 <Box className={styles.slider} >
-                    <Typography variant='h2' sx={{ textAlign: "center" }}>
+                    <Typography variant='h2' sx={{ textAlign: "center", color: "text.primary" }}>
                         <span className={styles.spancolor}>My</span> Work
                     </Typography>
                 </Box>
