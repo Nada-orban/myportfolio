@@ -7,7 +7,7 @@
   padding: 15px 20px;
   border-style: none;
   font-size: large;
-  margin-top: 10px;
+  margin-top: 15px;
   cursor: pointer;
 }
 .spancolor{
@@ -24,7 +24,8 @@
 
 } */
 .backgroundimage{
-  background: linear-gradient(to right, #000000, #434343);
+  background: linear-gradient( #000000de,
+  #1b1b1b) ,url('../public/assets/images/abstract-futuristic-background-with-3d-design.jpg');
   /* background: linear-gradient(to right, #4286f4, #373B44); */
 
   /* background:linear-gradient( #000000bd,#424242); */
@@ -43,8 +44,9 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  top: 75%;
-  right: 45%;
+  /* top: 75%; */
+  right: 50px;
+  bottom: 30px;
   gap: 15px;
   
 }
@@ -104,6 +106,10 @@
 
 
 /* #########################about################# */
+.aboutbackground{
+  background: linear-gradient(to left, #1c1d24 70%, #43434338 30%);
+
+}
 /* ##################skills############### */
 
 .slider{

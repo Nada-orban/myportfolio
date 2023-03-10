@@ -21,7 +21,7 @@ function Skills() {
             <Container>
                 <Box className={styles.slider} >
 
-                    <Typography variant='h2' sx={{ textAlign: "center" }}>
+                    <Typography variant='h2' sx={{ textAlign: "center", mb: 3 }}>
                         <span className={styles.spancolor}>My</span> Skills
                     </Typography>
 

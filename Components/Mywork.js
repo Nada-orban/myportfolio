@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 function Mywork() {
     return (
-        <Box id="Projects" py="10vh">
+        <Box id="projects" py="10vh">
             <Container Container >
                 <Box className={styles.slider} >
                     <Typography variant='h2' sx={{ textAlign: "center" }}>
@@ -43,7 +43,8 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                    <a href='https://restosamir.netlify.app' ><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+
                                 </Box>
 
                                 <Box className={styles.codebox}>
@@ -79,7 +80,8 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+
                                 </Box>
 
                                 <Box className={styles.codebox}>
@@ -116,7 +118,8 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+
                                 </Box>
 
                                 <Box className={styles.codebox}>
@@ -153,7 +156,8 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+
                                 </Box>
 
                                 <Box className={styles.codebox}>
@@ -190,7 +194,8 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+
                                 </Box>
 
                                 <Box className={styles.codebox}>
@@ -227,7 +232,8 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton>
+                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+
                                 </Box>
 
                                 <Box className={styles.codebox}>
