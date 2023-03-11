@@ -29,7 +29,7 @@ function Contact() {
     return (
         <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
-                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6, color: "text.primary" }}>
+                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6, color: "text.primary" }} data-aos="flip-up">
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
                 <Grid container spacing={10} sx={{ mt: 3 }}>

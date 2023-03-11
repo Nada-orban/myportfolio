@@ -11,11 +11,12 @@ import EmailIcon from '@mui/icons-material/Email';
 import jsonfile from '../public/assets/images/soft_dev (3).json'
 import Lottie from 'lottie-react'
 import { styled, useTheme, alpha } from '@mui/material/styles';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 import MenuNav from './MenuNav'
 
 import gif from "../public/assets/images/138767-laptop-animatiion.gif"
-// import styles from "../styles/Whomi.module.css"
+
 
 
 function Whoami() {
@@ -24,30 +25,13 @@ function Whoami() {
 
     return (
 
-        <Box pb="250px" pt="150px" id="home" className={styles.backgroundimage} >
+        <Box pb="100px" pt="100px" id="home" className={styles.backgroundimage} >
 
-            {/* <video
 
-                loop
-                autoPlay
-                muted
-            // style={{
-            //     position: "absolute",
-            //     width: "100%",
-            //     height: "15rem",
-            //     left: 0,
-            //     top: 0,
-            //     objectFit: "cover",
-            //     zIndex: "-1",
-            // }}
-            >
-                <source src={videobackground} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video> */}
             <Container>
                 <Grid container  >
                     <Grid md={6} xs={12} data-aos="fade-right" sx={{ mt: 18 }}>
-                        <Typography variant='h2'>Hello,I'm</Typography>
+                        <Typography variant='h3'>Hello,I'm</Typography>
                         <div className={styles.containertext}>
 
                             <div className={styles.typedout}>Nada Orban</div>
@@ -59,25 +43,13 @@ function Whoami() {
 
 
                     <Grid md={6} xs={12} data-aos="fade-down-left"   >
-                        <Lottie animationData={jsonfile} />
-
-                        {/* <Box width="520px" height="520px" overflow="hidden" backgroundColor="secondary.main" p="10px">
-
-
-                            <Image
-                                src={profilePic}
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-
-                            />
-                        </Box > */}
-
+                        <Box width="500px" height="500px" >
+                            <Lottie animationData={jsonfile} />
+                        </Box>
                     </Grid>
-
-
-
                 </Grid>
+
+
                 <Box display="flex" gap="30px" mt="20px" className={styles.contactionbox}>
                     {/* <a href="https://www.facebook.com/2447.nada.samir">
                         <Avatar sx={{
@@ -85,17 +57,24 @@ function Whoami() {
                         }} ><FacebookIcon /></Avatar>
                     </a> */}
                     <a href='https://github.com/Nada-orban' data-aos="fade-left">
-                        <Avatar className={styles.icon}><GitHubIcon sx={{ color: "black" }} /></Avatar>
+                        <Avatar className={styles.icon1}><GitHubIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                     <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200">
-                        <Avatar className={styles.icon} ><LinkedInIcon sx={{ color: "black" }} /></Avatar></a>
+                        <Avatar className={styles.icon1} ><LinkedInIcon sx={{ color: "black" }} /></Avatar></a>
                     <a href='' data-aos="fade-left" data-aos-delay="500">
-                        <Avatar className={styles.icon}>< WhatsAppIcon sx={{ color: "black" }} /></Avatar>
+                        <Avatar className={styles.icon1}>< WhatsAppIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                     <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800">
-                        <Avatar className={styles.icon} ><EmailIcon sx={{ color: "black" }} /></Avatar>
+                        <Avatar className={styles.icon1} ><EmailIcon sx={{ color: "black" }} /></Avatar>
                     </a>
                 </Box>
+                <a href="#about"><KeyboardDoubleArrowDownIcon sx={{
+                    width: "50px", height: "50px", color: "secondary.main",
+                    position: "absolute", left: "50%", bottom: "30px", cursor: "pointer"
+                }} className={styles.arrow} /></a>
+
+
+
                 {/* <Box className={styles.contactionbox}>
                     <Box borderRadius="10px" p="1" >
                         <a href="https://www.facebook.com/2447.nada.samir">
@@ -128,6 +107,8 @@ function Whoami() {
 
 
 
+
+
             </Container >
         </Box >
 
@@ -137,4 +118,34 @@ function Whoami() {
 }
 
 export default Whoami
+{/* <video
+
+                loop
+                autoPlay
+                muted
+            // style={{
+            //     position: "absolute",
+            //     width: "100%",
+            //     height: "15rem",
+            //     left: 0,
+            //     top: 0,
+            //     objectFit: "cover",
+            //     zIndex: "-1",
+            // }}
+            >
+                <source src={videobackground} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+
+{/* <Box width="520px" height="520px" overflow="hidden" backgroundColor="secondary.main" p="10px">
+
+
+                            <Image
+                                src={profilePic}
+                                alt="Picture of the author"
+                                width={500}
+                                height={500}
+
+                            />
+                        </Box > */}
 

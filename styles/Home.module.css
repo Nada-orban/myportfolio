@@ -44,6 +44,7 @@
   z-index: -1;
   color: white;
   overflow: hidden;
+  position: relative;
  
 }
 .contactionbox{
@@ -51,8 +52,9 @@
   display: flex;
   justify-content: center;
   /* top: 75%; */
-  right: 50px;
-  bottom: 30px;
+  right: 50%;
+  
+  /* bottom: 100px; */
   gap: 15px;
   
 }
@@ -69,10 +71,11 @@
 
   
 }
-.icon{
+.icon1{
   background-color: white;
+  cursor: pointer;
 }
-.icon:hover{
+.icon1:hover{
   background-color: var(--secondray-maincolor);
   color: white;
   transition: all .5s ease-in-out;
@@ -116,6 +119,30 @@
   to {
     width: 100%
   }
+}
+
+.arrow{
+  animation: arrow 1.5s ease-in-out both;
+  animation-iteration-count: infinite;
+
+}
+/* @media (max-width: 768px) .hero .go-down {
+  bottom: -50px;
+} */
+@keyframes arrow{
+  0%,
+  10%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0%);
+  }
+  40%,
+  60% {
+    transform: translateY(-30%);
+  }
+
 }
 
 

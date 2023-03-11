@@ -41,7 +41,7 @@ function About() {
                     <Grid item md={6} xs={12} sx={{ padding: "0px 0px", mb: 3 }} >
                         {/* <Lottie animationData={jsonfile} /> */}
                         <div data-aos="fade-right"
-                            data-aos-easing="ease-in-out"
+
                             data-aos-once="false"
                             data-aos-mirror="true"
                         >
