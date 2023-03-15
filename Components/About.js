@@ -40,9 +40,9 @@ function About() {
 
                     <Grid item md={6} xs={12} sx={{ padding: "0px 0px", mb: 3 }} >
                         {/* <Lottie animationData={jsonfile} /> */}
-                        <div data-aos="fade-right"
+                        <div data-aos="zoom-in"
 
-                            data-aos-once="false"
+
                             data-aos-mirror="true"
                         >
                             <Box width="420px" height="420px" p="10px" className={styles.photobox} >
@@ -63,7 +63,7 @@ function About() {
 
                     </Grid>
                     <Grid item md={6} xs={12} sx={{ padding: "0px 0px", mt: 4 }} >
-                        <Typography variant='h5' sx={{ my: 2 }} data-aos="fade-left" data-aos-delay="500" data-aos-once="true" data-aos-mirror="true">
+                        <Typography variant='h5' sx={{ my: 2 }} data-aos="fade-left" data-aos-delay="500" data-aos-once="false" >
                             I have a broad range of skills and expertise in various technologies
                             so I can create visually appealing and interactive user interfaces, and work on the back-end to ensure that those interfaces are fully functional and performant,<br />
                             My experience with Next.js, Node.js, and Express suggests that i  have knowledge of server-side programming, which is essential for creating full-stack applications.

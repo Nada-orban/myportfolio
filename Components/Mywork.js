@@ -11,6 +11,7 @@ import dashboardimage from '../public/assets/projects/Screenshot from 2023-03-07
 import storeimage from '../public/assets/projects/Screenshot from 2023-03-07 23-03-28.png'
 import Image from 'next/image'
 
+
 function Mywork() {
     return (
         <Box id="projects" py="10vh">
@@ -21,7 +22,7 @@ function Mywork() {
                     </Typography>
                 </Box>
                 <Grid container spacing={2} sx={{ my: 6, }}>
-                    <Grid item xs={12} md={4} data-aos="fade-right" data-aos-once="false" >
+                    <Grid item xs={12} md={4} data-aos="fade-right">
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -58,7 +59,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4} data-aos="fade-down" data-aos-delay="500" data-aos-once="false">
+                    <Grid item xs={12} md={4} data-aos="fade-down" data-aos-delay="500" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -96,7 +97,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4} data-aos="fade-left" data-aos-once="false" >
+                    <Grid item xs={12} md={4} data-aos="fade-left">
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -134,7 +135,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4} data-aos="fade-right" data-aos-delay="300" data-aos-once="false">
+                    <Grid item xs={12} md={4} data-aos="fade-right" data-aos-delay="300" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -172,7 +173,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="500" data-aos-once="false">
+                    <Grid item xs={12} md={4} data-aos="fade-up" data-aos-delay="500" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -210,7 +211,7 @@ function Mywork() {
                         </Card>
 
                     </Grid>
-                    <Grid item xs={12} md={4} data-aos="fade-left" data-aos-delay="300" data-aos-once="false">
+                    <Grid item xs={12} md={4} data-aos="fade-left" data-aos-delay="300" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>
@@ -244,10 +245,12 @@ function Mywork() {
                                         <Typography> REACT</Typography>
                                     </Box>
                                 </Box>
+
                             </CardActions>
                         </Card>
 
                     </Grid>
+
 
 
 

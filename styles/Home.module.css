@@ -45,37 +45,52 @@
   color: white;
   overflow: hidden;
   position: relative;
+  padding: 170px 0px ;
  
 }
 .contactionbox{
   position: absolute;
-  display: flex;
+  display: grid;
   justify-content: center;
-  /* top: 75%; */
-  right: 50%;
   
-  /* bottom: 100px; */
+  right: 50px;
+  
+  bottom: 100px;
   gap: 15px;
   
+}
+
+
+.WhoamiAnimation{
+  width: 500px;
+  height: 500px;
 }
 @media only screen and (max-width: 600px) {
   .contactionbox {
     position: absolute;
     display: flex;
     justify-content: center;
-    bottom: 0px;
+    bottom: 300px;
     right: 20%;
     gap: 15px;
   
   }
+  .backgroundimage{
+    padding: 20px 0px;
+    text-align: center;
+  }
+  .WhoamiAnimation {
+    width: 400px;
+    height: 400px;
+  }
 
   
 }
-.icon1{
+.icon{
   background-color: white;
   cursor: pointer;
 }
-.icon1:hover{
+.icon:hover{
   background-color: var(--secondray-maincolor);
   color: white;
   transition: all .5s ease-in-out;
@@ -182,6 +197,27 @@
 
   }
 }
+@media only screen and (max-width: 600px) {
+  .aboutbackground {
+    background: #1c1d24;
+    text-align: center;
+  
+  }
+  .photobox {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    left: 10%;
+  
+  }
+  .photo {
+   width: 280px;
+   height: 280px;
+   bottom: 0px;
+   right: 0px;
+  
+  }
+}
 /* ##################skills############### */
 
 .slider{
@@ -224,6 +260,7 @@
   /* transform: translateZ(20px); */
   transform: scale(1.2);
 }
+
 
 /* ################project############# */
 /* .projectCard{
@@ -358,6 +395,11 @@ align-items: center;
     transform: translateX(90px);
   }
  
+}
+@media only screen and (max-width: 600px) {
+  .projectCard{
+    margin: 0px 35px;
+  }
 }
 
 

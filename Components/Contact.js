@@ -89,6 +89,7 @@ function Contact() {
                             <a href='mailto:nadasamir9334@gmail.com'>
                                 <Avatar className={styles.iconContact}  ><SiUpwork /></Avatar>
                             </a>
+
                         </Box>
 
 
@@ -103,7 +104,7 @@ function Contact() {
 
 
             </Container>
-            <Box width="500px" height="400px" position="absolute" bottom="30px" right="0px">
+            <Box width="500px" height="400px" position="absolute" bottom="30px" right="0px" sx={{ display: { xs: 'none', sm: 'block' } }} >
                 <Lottie animationData={jsonfile} />
 
             </Box>

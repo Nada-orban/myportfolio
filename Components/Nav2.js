@@ -183,7 +183,7 @@ function DrawerAppBar(props) {
             </Typography> */}
 
 
-            <List sx={{ display: "grid", direction: "column", justifyContent: "center", my: 3 }} >
+            <List sx={{ display: "grid", direction: "column", justifyContent: "center", my: 3 }} data-aos="fade-right" data-aos-once="false" >
                 <ListItem>
                     <a href="#home">
                         <ListItemButton className={Styles.drawer_icon}>
