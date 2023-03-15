@@ -81,7 +81,7 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+                                    <a href='https://shop-0nline.netlify.app/'><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
 
                                 </Box>
 
@@ -119,7 +119,7 @@ function Mywork() {
                             }}>
                                 <Box className={styles.demobox}>
                                     <Box className={styles.infobox1}><Typography>Live Demo</Typography></Box>
-                                    <a href=''><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
+                                    <a href='https://fastfoodweb-nadaorban.netlify.app/'><IconButton className={styles.cardbutton} ><BsPlayFill style={{ color: "black" }} /></IconButton></a>
 
                                 </Box>
 

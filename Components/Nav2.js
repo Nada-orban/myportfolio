@@ -32,6 +32,9 @@ import Switch from '@mui/material/Switch';
 import { ColorModeContext } from '../public/theme'
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { LogoDev } from '@mui/icons-material';
+import Image from 'next/image';
+import logo from '../public/assets/images/logonada.png'
 
 
 const drawerWidth = 240;
@@ -241,13 +244,25 @@ function DrawerAppBar(props) {
                         <Container>
                             <Toolbar>
                                 <Box display='flex' flexGrow={1}>
-                                    <Typography
+                                    {/* <Typography
                                         variant="h6"
                                         component="div"
                                         sx={{ flexGrow: 1, display: { xs: 'block', sm: 'block' }, color: "secondary.main", mt: 3 }}
                                     >
                                         NADA
-                                    </Typography>
+                                    </Typography> */}
+                                    <Box sx={{ flexGrow: 1, display: "block", color: "secondary.main", mt: 2, borderRadius: "50%" }}>
+                                        <Image
+                                            src={logo}
+                                            alt="Picture of the logo"
+                                            width={50}
+                                            height={50}
+
+
+                                        />
+                                    </Box>
+
+
                                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                                         <List sx={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
                                             <ListItem>
