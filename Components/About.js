@@ -63,12 +63,12 @@ function About() {
 
                     </Grid>
                     <Grid item md={6} xs={12} sx={{ padding: "0px 0px", mt: 4 }} >
-                        <Typography variant='h5' sx={{ my: 2 }} data-aos="fade-left" data-aos-delay="500" data-aos-once="false" >
+                        <Typography variant='h5' sx={{ my: 2 }} data-aos="fade-left" data-aos-once="true" >
                             I have a broad range of skills and expertise in various technologies
                             so I can create visually appealing and interactive user interfaces, and work on the back-end to ensure that those interfaces are fully functional and performant,<br />
                             My experience with Next.js, Node.js, and Express suggests that i  have knowledge of server-side programming, which is essential for creating full-stack applications.
                         </Typography>
-                        <Typography variant='h5' sx={{ my: 2 }} data-aos="fade-left" data-aos-delay="1000" data-aos-once="false" >
+                        <Typography variant='h5' sx={{ my: 2 }} data-aos="fade-left" data-aos-delay="500">
                             I can also find solutions to complex challenges in the development process. I have a keen eye for detail, and i take pride in ensuring that my work is error-free and adheres to industry standards.
                         </Typography>
                     </Grid>

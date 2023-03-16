@@ -7,8 +7,15 @@
   padding: 15px 20px;
   border-style: none;
   font-size: large;
-  margin-top: 15px;
+  margin: 15px 5px;
   cursor: pointer;
+  transition: all .5s;
+ 
+}
+.buttonStyle:hover{
+  background-color:white;
+  color: var(--secondray-maincolor);
+  transform:scale(1.2);
 }
 
 .spancolor{
@@ -44,7 +51,7 @@
   z-index: -1;
   color: white;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   padding: 15vh 0px ;
  
 }

@@ -35,9 +35,10 @@ function Whoami() {
 
                             <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
                         </div>
-                        {/* <Typography variant='h2'>Nada Orban</Typography> */}
+
                         <Typography variant='h4' data-aos="fade-up" data-aos-delay="1000">FRONT END DEVELOPER</Typography>
                         <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link>
+                        <a href="#contact"><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></a>
                     </Grid>
 
 
@@ -79,34 +80,7 @@ function Whoami() {
 
 
 
-                {/* <Box className={styles.contactionbox}>
-                    <Box borderRadius="10px" p="1" >
-                        <a href="https://www.facebook.com/2447.nada.samir">
-                            <FacebookIcon sx={{ width: "40px", height: "40px", color: "#3b5998" }} />
-                        </a>
-                    </Box>
-                    <Box borderRadius="10px" p="1" >
-                        <a href='https://github.com/Nada-orban'>
-                            < GitHubIcon sx={{ width: "40px", height: "40px", color: "black" }} />
-                        </a>
-                    </Box>
-                    <Box borderRadius="10px" p="1" >
-                        <a href='https://www.linkedin.com/in/nada-samir-441a58130/'>
-                            <LinkedInIcon sx={{ width: "40px", height: "40px", color: "#0e76a8" }} />
-                        </a>
-                    </Box>
-                    <Box borderRadius="10px" p="1" >
-                        <a href=''>
-                            <WhatsAppIcon sx={{ width: "40px", height: "40px", color: "#075e54" }} />
-                        </a>
-                    </Box>
-                    <Box borderRadius="10px" p="1" >
-                        <a href='nadasamir9334@gmail.com'>
-                            <EmailIcon sx={{ width: "40px", height: "40px", color: "#c71610" }} />
-                        </a>
-                    </Box>
 
-                </Box> */}
 
 
 
@@ -122,34 +96,4 @@ function Whoami() {
 }
 
 export default Whoami
-{/* <video
-
-                loop
-                autoPlay
-                muted
-            // style={{
-            //     position: "absolute",
-            //     width: "100%",
-            //     height: "15rem",
-            //     left: 0,
-            //     top: 0,
-            //     objectFit: "cover",
-            //     zIndex: "-1",
-            // }}
-            >
-                <source src={videobackground} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video> */}
-
-{/* <Box width="520px" height="520px" overflow="hidden" backgroundColor="secondary.main" p="10px">
-
-
-                            <Image
-                                src={profilePic}
-                                alt="Picture of the author"
-                                width={500}
-                                height={500}
-
-                            />
-                        </Box > */}
 

@@ -14,6 +14,7 @@ import Contact from '../Components/Contact'
 
 
 
+
 export default function Home() {
   return (
     <>
@@ -34,10 +35,13 @@ export default function Home() {
       </Head>
 
       <Whoami />
+
+
       <About />
       <Skills />
       <Mywork />
       <Contact />
+
 
 
 
