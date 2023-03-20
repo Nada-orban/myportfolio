@@ -15,7 +15,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { SiUpwork } from 'react-icons/si'
 import jsonfile from '../public/assets/images/Chatting_01 (1).json'
 import Lottie from 'lottie-react'
-import { useForm } from "react-hook-form";
+import { useForm, ValidationError } from '@formspree/react';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -26,16 +26,19 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Contact() {
-    const { register, handleSubmit } = useForm("mjvdegqz");
+    const [state, handleSubmit] = useForm("mjvdegqz");
     const theme = useTheme();
-    const onSubmit = async data => { console.log(data) };
+    // const onSubmit = async data => { console.log(data) };
+    if (state.succeeded) {
+        return <p>Thanks for joining!</p>;
+    }
     return (
         <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
                 <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6, color: "text.primary" }} data-aos="flip-up">
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
-                <form onSubmit={handleSubmit(onSubmit)} action="https://formspree.io/f/mjvdegqz" method="POST" >
+                <form onSubmit={handleSubmit}  >
 
                     <Grid container spacing={10} sx={{ mt: 3 }}>
 
@@ -48,18 +51,29 @@ function Contact() {
                                 color="secondary"
                                 focused
                                 InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
-                                {...register("firstName")}
 
+
+                            />
+                            <ValidationError
+                                prefix="Name"
+                                field="name"
+                                errors={state.errors}
                             />
                             <TextField
                                 id="email"
                                 name="email"
+                                type="email"
                                 label="Email"
                                 color="secondary"
                                 focused
                                 InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
-                                {...register("secoundName")}
 
+
+                            />
+                            <ValidationError
+                                prefix="Email"
+                                field="email"
+                                errors={state.errors}
                             />
                             <TextField
                                 id="message"
@@ -70,8 +84,13 @@ function Contact() {
                                 rows={4}
                                 focused
                                 InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
-                                {...register("message")}
 
+
+                            />
+                            <ValidationError
+                                prefix="Message"
+                                field="message"
+                                errors={state.errors}
                             />
                             <button className={styles.buttonStyle} type="submit" >Send </button>
 
