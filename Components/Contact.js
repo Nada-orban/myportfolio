@@ -15,6 +15,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import { SiUpwork } from 'react-icons/si'
 import jsonfile from '../public/assets/images/Chatting_01 (1).json'
 import Lottie from 'lottie-react'
+import { useForm } from "react-hook-form";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -25,79 +26,96 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 function Contact() {
+    const { register, handleSubmit } = useForm("mjvdegqz");
     const theme = useTheme();
+    const onSubmit = async data => { console.log(data) };
     return (
         <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
                 <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6, color: "text.primary" }} data-aos="flip-up">
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
-                <Grid container spacing={10} sx={{ mt: 3 }}>
-                    <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "40px" }}>
-                        <TextField
-                            id="name"
-                            label="Name"
-                            color="secondary"
-                            focused
-                            InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
+                <form onSubmit={handleSubmit(onSubmit)} action="https://formspree.io/f/mjvdegqz" method="POST" >
 
-                        />
-                        <TextField
-                            id="email"
-                            label="Email"
-                            color="secondary"
-                            focused
-                            InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
-                        />
-                        <TextField
-                            id="message"
-                            label="Message"
-                            color="secondary"
-                            multiline
-                            rows={4}
-                            focused
-                            InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
-                        />
-                        <button className={styles.buttonStyle}>Send </button>
+                    <Grid container spacing={10} sx={{ mt: 3 }}>
 
-                    </Grid>
-                    <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
-                        <Box display="flex" gap="20px">
-                            <Avatar className={styles.iconContact}><AlternateEmailIcon /></Avatar>
-                            <Typography variant='h5' sx={{ color: "text.primary" }}>nadasamir9334@gmail.com</Typography>
-                        </Box>
-                        <Box display="flex" gap="20px">
-                            <Avatar className={styles.iconContact}><CallIcon /></Avatar>
-                            <Typography variant='h5' sx={{ color: "text.primary" }}>+1 01149629334</Typography>
-                        </Box>
-                        <Box display="flex" gap="30px" mt="20px">
-                            {/* <a href="https://www.facebook.com/2447.nada.samir">
+                        <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", justifyContent: "space-between", gap: "40px" }}>
+
+                            <TextField
+                                id="name"
+                                name='name'
+                                label="Name"
+                                color="secondary"
+                                focused
+                                InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
+                                {...register("firstName")}
+
+                            />
+                            <TextField
+                                id="email"
+                                name="email"
+                                label="Email"
+                                color="secondary"
+                                focused
+                                InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
+                                {...register("secoundName")}
+
+                            />
+                            <TextField
+                                id="message"
+                                name="message"
+                                label="Message"
+                                color="secondary"
+                                multiline
+                                rows={4}
+                                focused
+                                InputLabelProps={{ style: { fontSize: 23, marginTop: -15, marginLeft: -10 } }}
+                                {...register("message")}
+
+                            />
+                            <button className={styles.buttonStyle} type="submit" >Send </button>
+
+
+                        </Grid>
+
+                        <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
+                            <Box display="flex" gap="20px">
+                                <Avatar className={styles.iconContact}><AlternateEmailIcon /></Avatar>
+                                <Typography variant='h5' sx={{ color: "text.primary" }}>nadasamir9334@gmail.com</Typography>
+                            </Box>
+                            <Box display="flex" gap="20px">
+                                <Avatar className={styles.iconContact}><CallIcon /></Avatar>
+                                <Typography variant='h5' sx={{ color: "text.primary" }}>+1 01149629334</Typography>
+                            </Box>
+                            <Box display="flex" gap="30px" mt="20px">
+                                {/* <a href="https://www.facebook.com/2447.nada.samir">
                                 <Avatar className={styles.iconContact}  ><FacebookIcon /></Avatar>
                             </a> */}
-                            <a href='https://github.com/Nada-orban'>
-                                <Avatar className={styles.iconContact}  ><GitHubIcon /></Avatar>
-                            </a>
-                            <a href='https://www.linkedin.com/in/nada-samir-441a58130/'>
-                                <Avatar className={styles.iconContact}  ><LinkedInIcon /></Avatar></a>
-                            <a href=''>
-                                <Avatar className={styles.iconContact}  >< WhatsAppIcon /></Avatar>
-                            </a>
+                                <a href='https://github.com/Nada-orban'>
+                                    <Avatar className={styles.iconContact}  ><GitHubIcon /></Avatar>
+                                </a>
+                                <a href='https://www.linkedin.com/in/nada-samir-441a58130/'>
+                                    <Avatar className={styles.iconContact}  ><LinkedInIcon /></Avatar></a>
+                                <a href=''>
+                                    <Avatar className={styles.iconContact}  >< WhatsAppIcon /></Avatar>
+                                </a>
 
-                            <a href='mailto:nadasamir9334@gmail.com'>
-                                <Avatar className={styles.iconContact}  ><EmailIcon /></Avatar>
-                            </a>
-                            <a href='mailto:nadasamir9334@gmail.com'>
-                                <Avatar className={styles.iconContact}  ><SiUpwork /></Avatar>
-                            </a>
+                                <a href='mailto:nadasamir9334@gmail.com'>
+                                    <Avatar className={styles.iconContact}  ><EmailIcon /></Avatar>
+                                </a>
+                                <a href='mailto:nadasamir9334@gmail.com'>
+                                    <Avatar className={styles.iconContact}  ><SiUpwork /></Avatar>
+                                </a>
 
-                        </Box>
+                            </Box>
+
+
+                        </Grid>
+
 
 
                     </Grid>
-
-
-
-                </Grid>
+                </form>
 
 
 

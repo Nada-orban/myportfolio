@@ -9,6 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 import jsonfile from '../public/assets/images/soft_dev (3).json'
+import sayhi from '../public/assets/images/hi.json'
 import Lottie from 'lottie-react'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
@@ -29,7 +30,7 @@ function Whoami() {
         <Box id="home" className={styles.backgroundimage} >
             <Container>
                 <Grid container  >
-                    <Grid md={6} xs={12} sx={{ mt: 18 }}>
+                    <Grid md={6} xs={12} sx={{ mt: 18 }} className={styles.homeSection}>
                         <Typography variant='h3' data-aos="fade-up" >Hello,I'm</Typography>
                         <div className={styles.containertext}>
 
@@ -38,19 +39,23 @@ function Whoami() {
 
                         <Typography variant='h4' data-aos="fade-up" data-aos-delay="1000">FRONT END DEVELOPER</Typography>
                         <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link>
-                        <a href="#contact"><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></a>
+
+                        <a href="#contact"><button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></a>
                     </Grid>
 
 
-                    <Grid md={6} xs={12} data-aos="zoom-in" sx={{ display: { xs: 'none', sm: 'block' } }} >
+                    <Grid md={6} xs={12} data-aos="zoom-in" >
                         <Box className={styles.WhoamiAnimation} >
-                            <Lottie animationData={jsonfile} />
+                            <Box sx={{ display: { xs: 'none', sm: 'block' } }} > <Lottie animationData={jsonfile} /></Box>
+                            <Box sx={{ display: { xs: 'block', sm: 'none' } }} ><Lottie animationData={sayhi} /></Box>
+
+
                         </Box>
                     </Grid>
                 </Grid>
 
 
-                <Box display="flex" gap="30px" mt="20px" className={styles.contactionbox}>
+                <Box display="flex" gap="30px" mt="20px" className={styles.contactionbox} >
                     {/* <a href="https://www.facebook.com/2447.nada.samir">
                         <Avatar sx={{
                             bgcolor: "white"
