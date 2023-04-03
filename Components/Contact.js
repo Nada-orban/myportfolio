@@ -16,6 +16,7 @@ import { SiUpwork } from 'react-icons/si'
 import jsonfile from '../public/assets/images/Chatting_01 (1).json'
 import Lottie from 'lottie-react'
 import { useForm, ValidationError } from '@formspree/react';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -30,12 +31,14 @@ function Contact() {
     const theme = useTheme();
     // const onSubmit = async data => { console.log(data) };
     if (state.succeeded) {
-        return <p>Thanks for joining!</p>;
+        return <Box display="flex" justifyContent="center" textAlign="center" mb="30px" py="30px" backgroundColor="background.secondary">
+            <Typography variant='h2' sx={{ color: "text.primary" }}> Thanks for sending me</Typography>
+            <EmojiEmotionsIcon sx={{ color: "#dc965a", width: "50px", height: "50px", marginLeft: "10px" }} /> </Box>;
     }
     return (
         <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
-                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 6, color: "text.primary" }} data-aos="flip-up">
+                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 4, color: "text.primary" }} data-aos="flip-up">
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
                 <form onSubmit={handleSubmit}  >
@@ -141,7 +144,7 @@ function Contact() {
 
 
             </Container>
-            <Box width="500px" height="400px" position="absolute" bottom="30px" right="0px" sx={{ display: { xs: 'none', sm: 'block' } }} >
+            <Box width="500px" height="400px" position="absolute" bottom="30px" right="-15px" sx={{ display: { xs: 'none', sm: 'block' } }} >
                 <Lottie animationData={jsonfile} />
 
             </Box>
