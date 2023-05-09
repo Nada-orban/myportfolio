@@ -7,15 +7,16 @@ import Skill1 from '../public/assets/Skills/HTML5_logo_and_wordmark.svg.png'
 import Skill2 from '../public/assets/Skills/CSS3_logo_and_wordmark.svg.png'
 import Skill3 from '../public/assets/Skills/Unofficial_JavaScript_logo_2.svg.png'
 import Skill4 from '../public/assets/Skills/Bootstrap_logo.svg.png'
-import Skill5 from '../public/assets/Skills/next-js.svg'
+import Skill5 from '../public/assets/Skills/Rlogical-Blog-Images-thumbnail.webp'
 import Skill6 from '../public/assets/Skills/React-icon.svg.png'
 import Skill7 from '../public/assets/Skills/logo.png'
+import Skill8 from '../public/assets/Skills/Tailwind_CSS_Logo.svg.png'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 
 function Skills() {
-    const skillsArray = [Skill1, Skill2, Skill3, Skill4, Skill5, Skill6, Skill7]
+    const skillsArray = [Skill1, Skill2, Skill3, Skill4, Skill5, Skill6, Skill7, Skill8]
     return (
         <Box backgroundColor="background.secondary" id="skills" py="10vh">
             <Container>
@@ -23,7 +24,7 @@ function Skills() {
 
                     <Typography variant='h2' sx={{
                         textAlign: "center", mb: 3, color: "text.primary"
-                    }} data-aos="flip-up">
+                    }}>
                         <span className={styles.spancolor}>My</span> Skills
                     </Typography>
 

@@ -13,7 +13,7 @@ import sayhi from '../public/assets/images/hi.json'
 import Lottie from 'lottie-react'
 import { styled, useTheme, alpha } from '@mui/material/styles';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 
 import MenuNav from './MenuNav'
 
@@ -40,7 +40,7 @@ function Whoami() {
                         <Typography variant='h4' data-aos="fade-up" data-aos-delay="1000">FRONT END DEVELOPER</Typography>
                         <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link>
 
-                        <a href="#contact"><button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></a>
+                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}><button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></Link>
                     </Grid>
 
 
@@ -61,27 +61,27 @@ function Whoami() {
                             bgcolor: "white"
                         }} ><FacebookIcon /></Avatar>
                     </a> */}
-                    <a href='https://github.com/Nada-orban' data-aos="fade-left">
+                    <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
                         <Avatar className={styles.icon}><GitHubIcon sx={{ color: "black" }} /></Avatar>
                     </a>
-                    <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200">
+                    <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200" target="_blank">
                         <Avatar className={styles.icon} >
                             <LinkedInIcon sx={{ color: "black" }} /></Avatar>
                     </a>
-                    <a href='' data-aos="fade-left" data-aos-delay="500">
+                    {/* <a href='' data-aos="fade-left" data-aos-delay="500">
                         <Avatar className={styles.icon}>< WhatsAppIcon sx={{ color: "black" }} /></Avatar>
-                    </a>
-                    <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800">
+                    </a> */}
+                    <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
                         <Avatar className={styles.icon} ><EmailIcon sx={{ color: "black" }} /></Avatar>
                     </a>
 
                 </Box>
 
 
-                <a href="#about"><KeyboardDoubleArrowDownIcon sx={{
+                <Link to="about" spy={true} smooth={true} offset={-50} duration={500}><KeyboardDoubleArrowDownIcon sx={{
                     width: "50px", height: "50px", color: "secondary.main",
                     position: "absolute", left: "50%", bottom: "30px", cursor: "pointer"
-                }} className={styles.arrow} /></a>
+                }} className={styles.arrow} /></Link>
 
 
 

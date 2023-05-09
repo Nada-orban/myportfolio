@@ -38,7 +38,7 @@ function Contact() {
     return (
         <Box id="contact" pt="10vh" pb="20vh" backgroundColor="background.secondary" position="relative">
             <Container>
-                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 4, color: "text.primary" }} data-aos="flip-up">
+                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 4, color: "text.primary" }} >
                     Contact <span className={styles.spancolor}>Me</span>
                 </Typography>
                 <form onSubmit={handleSubmit}  >

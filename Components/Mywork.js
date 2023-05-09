@@ -11,13 +11,13 @@ import dashboardimage from '../public/assets/projects/Screenshot from 2023-03-07
 import storeimage from '../public/assets/projects/Screenshot from 2023-03-07 23-03-28.png'
 import Image from 'next/image'
 
-
+//data-aos="flip-up"
 function Mywork() {
     return (
         <Box id="projects" py="10vh">
             <Container Container >
                 <Box className={styles.slider} >
-                    <Typography variant='h2' sx={{ textAlign: "center", color: "text.primary" }} data-aos="flip-up">
+                    <Typography variant='h2' sx={{ textAlign: "center", color: "text.primary" }} >
                         <span className={styles.spancolor}>My</span> Work
                     </Typography>
                 </Box>

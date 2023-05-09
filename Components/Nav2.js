@@ -35,6 +35,7 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { LogoDev } from '@mui/icons-material';
 import Image from 'next/image';
 import logo from '../public/assets/images/logonada.png'
+import { Link } from 'react-scroll'
 
 
 const drawerWidth = 240;
@@ -188,44 +189,44 @@ function DrawerAppBar(props) {
 
             <List sx={{ display: "grid", direction: "column", justifyContent: "center", my: 3 }} data-aos="fade-right" data-aos-once="false" >
                 <ListItem>
-                    <a href="#home">
+                    <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             <HomeIcon sx={{ color: "secondary.main", width: "50px" }} />
                             <ListItemText primary="Home" />
                         </ListItemButton>
-                    </a>
+                    </Link>
                 </ListItem>
                 <ListItem>
-                    <a href="#about">
+                    <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
                         <ListItemButton className={Styles.drawer_icon}>
                             <Person2Icon sx={{ mx: 2 }} />
                             <ListItemText primary="About" />
                         </ListItemButton>
-                    </a>
+                    </Link>
                 </ListItem>
                 <ListItem>
-                    <a href="#skills">
+                    <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             < SensorOccupiedIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Skills" />
                         </ListItemButton>
-                    </a>
+                    </Link>
                 </ListItem>
                 <ListItem>
-                    <a href="#projects">
+                    <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             <WorkIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Projects" />
                         </ListItemButton>
-                    </a>
+                    </Link>
                 </ListItem>
                 <ListItem>
-                    <a href="#contact">
+                    <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             <ConnectWithoutContactIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Contact" />
                         </ListItemButton>
-                    </a>
+                    </Link>
                 </ListItem>
             </List>
         </Box>
@@ -266,39 +267,39 @@ function DrawerAppBar(props) {
                                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                                         <List sx={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
                                             <ListItem>
-                                                <a href="#home">
+                                                <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton >
                                                         <HomeIcon sx={{ color: "secondary.main", width: "30px", height: "30px" }} />
                                                     </ListItemButton>
-                                                </a>
+                                                </Link>
                                             </ListItem>
                                             <ListItem>
-                                                <a href="#about">
+                                                <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="About" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </a>
+                                                </Link>
                                             </ListItem>
                                             <ListItem>
-                                                <a href="#skills">
+                                                <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="Skills" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </a>
+                                                </Link>
                                             </ListItem>
                                             <ListItem>
-                                                <a href="#projects">
+                                                <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="Projects" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </a>
+                                                </Link>
                                             </ListItem>
                                             <ListItem>
-                                                <a href="#contact">
+                                                <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="Contact" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </a>
+                                                </Link>
                                             </ListItem>
                                             <FormGroup>
                                                 <FormControlLabel

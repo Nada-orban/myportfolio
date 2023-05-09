@@ -15,6 +15,7 @@ import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact
 import Popover from '@mui/material/Popover';
 import Styles from '../styles/Nav.module.css'
 import Navicon from './Navicon';
+import { Link } from 'react-scroll'
 
 
 
@@ -43,13 +44,13 @@ function Nav() {
                     <Timeline sx={{ position: "absolute", justifyContent: "center", right: "-5%", top: "15px" }}>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <a href='#home' className='active' >
+                                <Link to="home" spy={true} smooth={true} offset={-50} duration={500}  >
                                     <TimelineDot variant="outlined" />
                                     {/* <HomeIcon
                                         className={Styles.icon}
 
                                     /> */}
-                                </a>
+                                </Link>
 
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
                                 {/* <TimelineConnector sx={{ marginTop: "5px" }} />
@@ -58,10 +59,10 @@ function Nav() {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <a href='#about'>
+                                <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
                                     <TimelineDot variant="outlined" />
                                     {/* <Person2Icon className={Styles.icon} /> */}
-                                </a>
+                                </Link>
 
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
                                 {/* <TimelineConnector sx={{ marginTop: "5px" }} />
@@ -70,10 +71,10 @@ function Nav() {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <a href='#skills'>
+                                <Link to="skills" spy={true} smooth={true} offset={-50} duration={500} >
                                     <TimelineDot variant="outlined" />
                                     {/* < SensorOccupiedIcon sx={{ margin: "5px 0px", }} className={Styles.icon} /> */}
-                                </a>
+                                </Link>
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
                                 {/* <TimelineConnector sx={{ marginTop: "5px" }} />
                                 <TimelineConnector sx={{ marginTop: "5px", marginBottom: "5px" }} /> */}
@@ -82,10 +83,10 @@ function Nav() {
 
                         <TimelineItem>
                             <TimelineSeparator>
-                                <a href='#mywork'>
+                                <Link href='#mywork'>
                                     <TimelineDot variant="outlined" />
                                     {/* <WorkIcon sx={{ margin: "5px 0px", }} className={Styles.icon} /> */}
-                                </a>
+                                </Link>
 
                                 <TimelineConnector sx={{ marginTop: "5px" }} />
                                 {/* <TimelineConnector sx={{ marginTop: "5px" }} />
@@ -95,10 +96,10 @@ function Nav() {
 
                         <TimelineItem>
                             <TimelineSeparator>
-                                <a href='#contacts'>
+                                <Link href='#contacts'>
                                     <TimelineDot variant="outlined" />
                                     {/* <ConnectWithoutContactIcon sx={{ margin: "5px 0px", }} className={Styles.icon} /> */}
-                                </a>
+                                </Link>
                             </TimelineSeparator>
                         </TimelineItem>
 

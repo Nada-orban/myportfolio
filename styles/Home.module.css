@@ -408,7 +408,7 @@ align-items: center;
   
   100% {
     opacity: 1;
-    transform: translateX(-100px);
+    transform: translateX(-90px);
   }
 }
 
@@ -421,13 +421,26 @@ align-items: center;
 
   100% {
     opacity: 1;
-    transform: translateX(90px);
+    transform: translateX(80px);
   }
  
 }
 @media only screen and (max-width: 600px) {
   .projectCard{
     margin: 0px 35px;
+  }
+  @keyframes movebox2 {
+    0% {
+      opacity: 0;
+      transform: translateX(0);
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translateX(60px);
+    }
+  
   }
 }
 

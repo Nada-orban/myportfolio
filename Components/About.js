@@ -33,7 +33,7 @@ function About() {
     return (
         <Box id="about" py="15vh" className={styles.aboutbackground}>
             <Container>
-                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 4 }} data-aos="flip-up">
+                <Typography variant="h2" component="h2" sx={{ textAlign: "center", mb: 4 }} >
                     About <span className={styles.spancolor}>Me</span>
                 </Typography>
                 <Grid container spacing={3}>
