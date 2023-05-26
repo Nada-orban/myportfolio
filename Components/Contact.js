@@ -102,12 +102,12 @@ function Contact() {
 
                         <Grid item xs={12} md={6} sx={{ display: "flex", flexDirection: "column", gap: "40px", }}>
                             <Box display="flex" gap="20px">
-                                <Avatar className={styles.iconContact}><AlternateEmailIcon /></Avatar>
-                                <Typography variant='h5' sx={{ color: "text.primary", backgroundColor: "secondary.main" }}>nadasamir9334@gmail.com</Typography>
+                                <Avatar className={styles.iconContact} sx={{ backgroundColor: "secondary.main" }}><AlternateEmailIcon /></Avatar>
+                                <Typography variant='h5' sx={{ color: "text.primary", }}>nadasamir9334@gmail.com</Typography>
                             </Box>
                             <Box display="flex" gap="20px">
-                                <Avatar className={styles.iconContact}><CallIcon /></Avatar>
-                                <Typography variant='h5' sx={{ color: "text.primary", backgroundColor: "secondary.main" }}>+1 01149629334</Typography>
+                                <Avatar className={styles.iconContact} sx={{ backgroundColor: "secondary.main" }}><CallIcon /></Avatar>
+                                <Typography variant='h5' sx={{ color: "text.primary", }}>+1 01149629334</Typography>
                             </Box>
                             <Box display="flex" gap="30px" mt="20px">
                                 {/* <a href="https://www.facebook.com/2447.nada.samir">
