@@ -41,6 +41,15 @@ import { Link } from 'react-scroll'
 const drawerWidth = 240;
 
 
+const NavLinks = styled(Link)`
+  color: white;
+  &.active {
+    color: #F7AE9D;
+    
+  }
+  
+`;
+
 //dark mode button
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 62,
@@ -189,44 +198,44 @@ function DrawerAppBar(props) {
 
             <List sx={{ display: "grid", direction: "column", justifyContent: "center", my: 3 }} data-aos="fade-right" data-aos-once="false" >
                 <ListItem>
-                    <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="home" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             <HomeIcon sx={{ color: "secondary.main", width: "50px" }} />
                             <ListItemText primary="Home" />
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <ListItem>
-                    <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                    <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} >
                         <ListItemButton className={Styles.drawer_icon}>
                             <Person2Icon sx={{ mx: 2 }} />
                             <ListItemText primary="About" />
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <ListItem>
-                    <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             < SensorOccupiedIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Skills" />
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <ListItem>
-                    <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             <WorkIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Projects" />
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
                 <ListItem>
-                    <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                    <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                         <ListItemButton className={Styles.drawer_icon}>
                             <ConnectWithoutContactIcon sx={{ mx: 2 }} />
                             <ListItemText primary="Contact" />
                         </ListItemButton>
-                    </Link>
+                    </NavLinks>
                 </ListItem>
             </List>
         </Box>
@@ -267,39 +276,39 @@ function DrawerAppBar(props) {
                                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                                         <List sx={{ display: "flex", justifyContent: "space-around", alignItems: "center" }}>
                                             <ListItem>
-                                                <Link to="home" spy={true} smooth={true} offset={-50} duration={500}>
+                                                <NavLinks to="home" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton >
                                                         <HomeIcon sx={{ color: "secondary.main", width: "30px", height: "30px" }} />
                                                     </ListItemButton>
-                                                </Link>
+                                                </NavLinks>
                                             </ListItem>
                                             <ListItem>
-                                                <Link to="about" spy={true} smooth={true} offset={-50} duration={500} >
+                                                <NavLinks to="about" spy={true} smooth={true} offset={-50} duration={500} >
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="About" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </Link>
+                                                </NavLinks>
                                             </ListItem>
                                             <ListItem>
-                                                <Link to="skills" spy={true} smooth={true} offset={-50} duration={500}>
+                                                <NavLinks to="skills" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="Skills" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </Link>
+                                                </NavLinks>
                                             </ListItem>
                                             <ListItem>
-                                                <Link to="projects" spy={true} smooth={true} offset={-50} duration={500}>
+                                                <NavLinks to="projects" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="Projects" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </Link>
+                                                </NavLinks>
                                             </ListItem>
                                             <ListItem>
-                                                <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}>
+                                                <NavLinks to="contact" spy={true} smooth={true} offset={-50} duration={500}>
                                                     <ListItemButton sx={{ textAlign: 'center' }}>
                                                         <ListItemText primary="Contact" sx={{ color: "text.primary" }} />
                                                     </ListItemButton>
-                                                </Link>
+                                                </NavLinks>
                                             </ListItem>
                                             <FormGroup>
                                                 <FormControlLabel

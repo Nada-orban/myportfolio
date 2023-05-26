@@ -45,14 +45,14 @@ function About() {
 
                             data-aos-mirror="true"
                         >
-                            <Box width="420px" height="420px" p="10px" className={styles.photobox} >
+                            <Box width="420px" height="460px" p="10px" className={styles.photobox} >
 
 
                                 <Image
                                     src={profilePic}
                                     alt="Picture of the author"
                                     width={400}
-                                    height={400}
+                                    // height={400}
                                     className={styles.photo}
 
                                 />

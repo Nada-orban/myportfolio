@@ -14,15 +14,15 @@ import Image from 'next/image'
 //data-aos="flip-up"
 function Mywork() {
     return (
-        <Box id="projects" py="10vh">
+        <Box id="projects" py="10vh" margin="auto">
             <Container Container >
-                <Box className={styles.slider} >
+                <Box className={styles.slider} margin="auto" >
                     <Typography variant='h2' sx={{ textAlign: "center", color: "text.primary" }} >
                         <span className={styles.spancolor}>My</span> Work
                     </Typography>
                 </Box>
-                <Grid container spacing={2} sx={{ my: 6, }}>
-                    <Grid item xs={12} md={4} data-aos="fade-right">
+                <Grid container spacing={2} sx={{ my: 6, mx: "auto" }}>
+                    <Grid item xs={12} md={4} data-aos="fade-right" >
                         <Card sx={{ maxWidth: 330, borderRadius: "10px", cursor: "pointer" }} className={styles.projectCard}>
                             <CardActionArea>
                                 <CardMedia className={styles.imageCard}>

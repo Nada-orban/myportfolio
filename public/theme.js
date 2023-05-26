@@ -53,8 +53,10 @@ export const themeSettongs = (mode) => {
                     skill: "white"
                 },
                 background: {
-                    main: "#1c1d24 ",
-                    secondary: "black"
+                    // main: "#3d3e49",
+                    main: "#3d3e49",
+                    secondary: "#1c1d24 "
+                    // secondary: "#3a3b3c"
                     // secondary: " #1d1d1d"
                 }, text: {
                     primary: "white",

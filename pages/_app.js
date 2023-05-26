@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }) {
         <Nav2 />
         <Component {...pageProps} />
         <style jsx global>{`
-              ${theme.palette.mode === 'dark' ? "body{background:#1c1d24} " : "body{background: #fff} "}`
+              ${theme.palette.mode === 'dark' ? "body{background:#3d3e49} " : "body{background: #fff} "}`
         }</style>
 
 

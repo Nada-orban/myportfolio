@@ -114,19 +114,17 @@ function Contact() {
                                 <Avatar className={styles.iconContact}  ><FacebookIcon /></Avatar>
                             </a> */}
                                 <a href='https://github.com/Nada-orban'>
-                                    <Avatar className={styles.iconContact}  ><GitHubIcon /></Avatar>
+                                    <Avatar className={styles.iconContact} sx={{ backgroundColor: "secondary.main" }}><GitHubIcon /></Avatar>
                                 </a>
                                 <a href='https://www.linkedin.com/in/nada-samir-441a58130/'>
-                                    <Avatar className={styles.iconContact}  ><LinkedInIcon /></Avatar></a>
-                                <a href=''>
-                                    <Avatar className={styles.iconContact}  >< WhatsAppIcon /></Avatar>
-                                </a>
+                                    <Avatar className={styles.iconContact} sx={{ backgroundColor: "secondary.main" }}><LinkedInIcon /></Avatar></a>
+
 
                                 <a href='mailto:nadasamir9334@gmail.com'>
-                                    <Avatar className={styles.iconContact}  ><EmailIcon /></Avatar>
+                                    <Avatar className={styles.iconContact} sx={{ backgroundColor: "secondary.main" }} ><EmailIcon /></Avatar>
                                 </a>
                                 <a href='mailto:nadasamir9334@gmail.com'>
-                                    <Avatar className={styles.iconContact}  ><SiUpwork /></Avatar>
+                                    <Avatar className={styles.iconContact} sx={{ backgroundColor: "secondary.main" }}><SiUpwork /></Avatar>
                                 </a>
 
                             </Box>
@@ -144,7 +142,7 @@ function Contact() {
 
 
             </Container>
-            <Box width="500px" height="400px" position="absolute" bottom="30px" right="-15px" sx={{ display: { xs: 'none', sm: 'block' } }} >
+            <Box width="350px" height="350px" position="absolute" bottom="-10px" right="10px" sx={{ display: { xs: 'none', lg: 'block' } }} >
                 <Lottie animationData={jsonfile} />
 
             </Box>

@@ -29,8 +29,9 @@ function Whoami() {
 
         <Box id="home" className={styles.backgroundimage} >
             <Container>
-                <Grid container  >
-                    <Grid md={6} xs={12} sx={{ mt: 18 }} className={styles.homeSection}>
+
+                <Grid container   >
+                    <Grid md={6} xs={12} className={styles.homeSection} sx={{ mt: 18 }}>
                         <Typography variant='h3' data-aos="fade-up" >Hello,I'm</Typography>
                         <div className={styles.containertext}>
 
@@ -45,7 +46,7 @@ function Whoami() {
 
 
                     <Grid md={6} xs={12} data-aos="zoom-in" >
-                        <Box className={styles.WhoamiAnimation} >
+                        <Box className={styles.WhoamiAnimation} sx={{ margin: "auto" }} >
                             <Box sx={{ display: { xs: 'none', sm: 'block' } }} > <Lottie animationData={jsonfile} /></Box>
                             <Box sx={{ display: { xs: 'block', sm: 'none' } }} ><Lottie animationData={sayhi} /></Box>
 
@@ -55,12 +56,8 @@ function Whoami() {
                 </Grid>
 
 
-                <Box display="flex" gap="30px" mt="20px" className={styles.contactionbox} >
-                    {/* <a href="https://www.facebook.com/2447.nada.samir">
-                        <Avatar sx={{
-                            bgcolor: "white"
-                        }} ><FacebookIcon /></Avatar>
-                    </a> */}
+                {/* <Box gap="30px" mt="20px" className={styles.contactionbox} sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>
+
                     <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
                         <Avatar className={styles.icon}><GitHubIcon sx={{ color: "black" }} /></Avatar>
                     </a>
@@ -68,30 +65,18 @@ function Whoami() {
                         <Avatar className={styles.icon} >
                             <LinkedInIcon sx={{ color: "black" }} /></Avatar>
                     </a>
-                    {/* <a href='' data-aos="fade-left" data-aos-delay="500">
-                        <Avatar className={styles.icon}>< WhatsAppIcon sx={{ color: "black" }} /></Avatar>
-                    </a> */}
+
                     <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
                         <Avatar className={styles.icon} ><EmailIcon sx={{ color: "black" }} /></Avatar>
                     </a>
 
-                </Box>
+                </Box> */}
 
 
                 <Link to="about" spy={true} smooth={true} offset={-50} duration={500}><KeyboardDoubleArrowDownIcon sx={{
                     width: "50px", height: "50px", color: "secondary.main",
                     position: "absolute", left: "50%", bottom: "30px", cursor: "pointer"
                 }} className={styles.arrow} /></Link>
-
-
-
-
-
-
-
-
-
-
             </Container >
         </Box >
 
@@ -101,4 +86,37 @@ function Whoami() {
 }
 
 export default Whoami
+
+
+{/* <Box display="flex" justifyContent="center" alignItems="center" sx={{ flexDirection: "column", mt: "30px" }}>
+                    <Box width="250px" height="250px" p="5px" borderRadius="50%" overflow="hidden" border="1px solid white" my="20px">
+                        <Image
+                            src={profilePic}
+                            alt="Picture of the author"
+                            width={300}
+                            height={300}
+                        /></Box>
+                    <Box textAlign="center" mt="20px">
+                        <Typography variant='h3' data-aos="fade-up" >Hello,I'm</Typography>
+                        <div className={styles.containertext}>
+                            <div className={styles.typedout} data-aos="fade-up" data-aos-delay="500">Nada Orban</div>
+                        </div>
+                        <Typography variant='h4' data-aos="fade-up" data-aos-delay="1000">FRONT END DEVELOPER</Typography>
+                        <Box gap="20px" mt="20px" justifyContent="center" sx={{ display: { xs: 'none', sm: 'none', md: 'flex' } }}>
+                        
+                            <a href='https://github.com/Nada-orban' data-aos="fade-left" target="_blank">
+                                <Avatar className={styles.icon}><GitHubIcon sx={{ color: "black" }} /></Avatar>
+                            </a>
+                            <a href='https://www.linkedin.com/in/nada-samir-441a58130/' data-aos="fade-left" data-aos-delay="200" target="_blank">
+                                <Avatar className={styles.icon} >
+                                    <LinkedInIcon sx={{ color: "black" }} /></Avatar>
+                            </a>         
+                            <a href='mailto:nadasamir9334@gmail.com' data-aos="fade-left" data-aos-delay="800" target="_blank">
+                                <Avatar className={styles.icon} ><EmailIcon sx={{ color: "black" }} /></Avatar>
+                            </a>
+                        </Box>
+                        <Link href=""><button className={styles.buttonStyle} data-aos="fade-up" data-aos-delay="1500">Download My CV</button></Link>
+                        <Link to="contact" spy={true} smooth={true} offset={-50} duration={500}><button className={styles.buttonStyle2} data-aos="fade-up" data-aos-delay="1500">Contact Me</button></Link>
+                    </Box>
+                </Box> */}
 
