@@ -328,7 +328,7 @@ function DrawerAppBar(props) {
                                     onClick={handleDrawerToggle}
                                     sx={{ display: { sm: 'none' } }}
                                 >
-                                    <MenuIcon />
+                                    <MenuIcon sx={{ width: "30px", height: "30px" }} />
                                 </IconButton>
 
                             </Toolbar>
